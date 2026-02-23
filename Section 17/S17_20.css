@@ -1,0 +1,19 @@
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0% {
+        width: 200px;
+    }
+    100% {
+        width: 500px;
+    }
+}
+.box1:hover {
+    animation-play-state: paused;
+}

@@ -1,0 +1,6 @@
+input:enabled {
+    color: red;
+}
+input:disabled {
+    color: orange;
+}

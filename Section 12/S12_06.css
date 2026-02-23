@@ -1,0 +1,3 @@
+[href*="sub"] {
+    color: red;
+}

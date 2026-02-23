@@ -1,0 +1,13 @@
+.box1 {
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+.box2 {
+    border-width: 3px;
+    border-style: dashed;
+    border-color: blue;
+}
+.box3 {
+    border: 3px dotted purple;
+}

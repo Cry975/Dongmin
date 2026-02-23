@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid blue;
+}
+.item {
+    border: 2px solid red;
+}
+.item:nth-child(2) {
+    background-color: yellow;
+    justify-self: end;
+    align-self: start;
+}

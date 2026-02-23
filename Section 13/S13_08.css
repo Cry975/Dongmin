@@ -1,0 +1,12 @@
+span {
+    font-size: 10px;
+}
+.text1 span {
+    vertical-align: top;
+}
+.text2 span {
+    vertical-align: bottom;
+}
+.text3 span {
+    vertical-align: middle;
+}

@@ -1,0 +1,27 @@
+.box1 {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    z-index: 10;
+}
+.box2 {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 30;
+}
+.box3 {
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    z-index: 20;
+}

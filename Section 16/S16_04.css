@@ -1,0 +1,10 @@
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition-duration: 2s;
+    transition-delay: 3s;
+}
+.box1:hover {
+    background-color: blue;
+}

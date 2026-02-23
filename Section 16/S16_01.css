@@ -1,0 +1,12 @@
+.box1, .box2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.box1:hover {
+    transition: 1s;
+    background-color: blue;
+}
+.box2:hover {
+    background-color: blue;
+}

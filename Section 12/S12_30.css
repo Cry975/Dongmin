@@ -1,0 +1,6 @@
+p:not(.p2) {
+    color: red;
+}
+p:not(#p4) {
+    background-color: pink;
+}

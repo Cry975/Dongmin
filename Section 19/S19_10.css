@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    height: 200px;
+    border: 2px solid blue;
+    flex-wrap: row wrap;
+}
+.item {
+    width: 50%;
+}

@@ -1,0 +1,7 @@
+.box {
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    background-image: url("./apple.jpg");
+    background-repeat: no-repeat;
+}

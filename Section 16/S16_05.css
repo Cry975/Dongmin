@@ -1,0 +1,19 @@
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition-duration: 2s;
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.box1:hover {
+    width: 500px;
+}
+.box2:hover {
+    width: 500px;
+}

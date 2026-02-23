@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    height: 100px;
+    border: 2px solid blue;
+}
+.item1, .item2, .item3 {
+    border: 2px solid red;
+}
+.item1 {
+    flex-grow: 1;
+}
+.item2 {
+    font-size: 50px;
+    flex-grow: 1;
+}
+.item3 {
+    flex-grow: 1;
+}

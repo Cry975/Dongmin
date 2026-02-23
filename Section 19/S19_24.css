@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    height: 100px;
+    border: 2px solid blue;
+}
+.item {
+    width: 100px;
+    word-wrap: break-word;
+}

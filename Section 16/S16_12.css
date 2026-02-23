@@ -1,0 +1,6 @@
+.box1 {
+    transform: translateX(150px);
+}
+.box2 {
+    transform: translateY(-150px);
+}

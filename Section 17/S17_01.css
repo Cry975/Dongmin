@@ -1,0 +1,15 @@
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: move;
+    animation-duration: 1s;
+}
+@keyframes move {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 300px;
+    }
+}

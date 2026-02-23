@@ -1,0 +1,6 @@
+p:last-child {
+    color: red;
+}
+p:last-of-type {
+    background-color: yellow;
+}

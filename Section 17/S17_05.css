@@ -1,0 +1,4 @@
+@keyframes move {
+    from { width: 100px; }
+    to { width: 300px; }
+}

@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    height: 200px;
+    border: 2px solid blue;
+}
+.item {
+    border: 2px solid red;
+}

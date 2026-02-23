@@ -1,0 +1,6 @@
+.container {
+    display: grid;
+    height: 500px;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 2px solid blue;
+}

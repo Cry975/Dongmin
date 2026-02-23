@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    height: 200px;
+    border: 2px solid blue;
+    flex-wrap: wrap-reverse;
+}
+.item {
+    width: 50%;
+}

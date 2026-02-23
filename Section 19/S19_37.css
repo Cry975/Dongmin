@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border: 2px solid blue;
+}
+.item {
+    border: 2px solid red;
+}
+.item:last-child {
+    align-self: flex-end;
+}
