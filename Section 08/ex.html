@@ -60,5 +60,110 @@
             <td colspan="5">프로젝트 실습</td>
         </tr>
     </table>
+        <br><br>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>회원가입</legend>
+                
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th><label for="userid">아이디</label></th>
+                    <td>
+                        <input type="text" id="userid" required>
+                        <button>중복확인</button>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th><label for="password">비밀번호</label></th>
+                    <td><input type="password" name="password" id="password" required></td>
+                </tr>
+
+                <tr>
+                    <th><label for="password2">비밀번호 확인</label></th>
+                    <td><input type="password" name="password2" id="password2" required></td>
+                </tr>
+
+                <tr>
+                    <th><label for="username">이름</label></th>
+                    <td>
+                        <input type="text" id="username" required>
+                        *실명으로 기입하여 주시기 바랍니다.
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th><label for="gender">성별</label></th>
+                    <td>
+                        <input type="radio" name="gender" id="male"><label for="male">남자</label>
+                        <input type="radio" name="gender" id="female"><label for="female">여자</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><label for="birth">생일</label></th>
+                    <td><input type="date" name="birth" id="birth"></td>
+                </tr>
+
+                <tr>
+                    <th><label for="phone">휴대폰</label></th>
+                    <td><input type="tel" name="phone" id="phone"></td>
+                </tr>
+
+                <tr>
+                    <th><label for="email">이메일</label></th>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+
+                <tr>
+                    <th>이메일 정보수신</th>
+                    <td>
+                        <input type="checkbox" name="emailchk" id="chk1" checked><label for="chk1">수신</label>
+                        <input type="checkbox" name="emailchk" id="chk2"><label for="chk2">수신거부</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><label for="location">근무지역명</label></th>
+                    <td>
+                        <select name="location" id="location">
+                            <option>선택</option>
+                            <option>서울</option>
+                            <option>인천/경기</option>
+                            <option>부산/경남</option>
+                            <option>대구/경북</option>
+                            <option>광주/전남</option>
+                            <option>전주/전북</option>
+                            <option>대전/충남</option>
+                            <option>충주/충북</option>
+                            <option>강원/제주</option>               
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><label for="interest">주요관심사</label></th>
+                    <td>
+                        <input type="checkbox" name="interest" value="건강">건강
+                        <input type="checkbox" name="interest" value="IT">IT
+                        <input type="checkbox" name="interest" value="쇼핑">쇼핑
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><label for="file">파일첨부</label></th>
+                    <td><input type="file" name="file" id="file"></td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">
+                        <input type="submit" value="제출">
+                        <input type="reset"  value="초기화">
+                    </th>
+                </tr>
+                
+            </table>
+            </fieldset>     
+        </form>
 </body>
 </html>
