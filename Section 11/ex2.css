@@ -1,0 +1,43 @@
+* {
+    font-size: 18px;
+}
+
+#header {
+    background-color: lightgrey;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    color: navy;
+    font-size: 32px;
+}
+
+.menu {
+    border: 1px solid blue; 
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    font-size: 30px;
+    color: purple;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+h3 {
+    color: blue;
+}
+
+.under {
+    color: red;
+    text-decoration: underline;
+}

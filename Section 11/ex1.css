@@ -1,0 +1,29 @@
+* {
+    font-size: 18px;
+}
+
+#container {
+    border: 3px solid black;
+}
+
+#title {
+    font-size: 36px; color: darkred;
+}
+
+.subtitle {
+    color: gray;
+}
+
+.item {
+    background-color: lightgrey;
+}
+
+h2 {
+    color: brown;
+    font-size: 24px;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}

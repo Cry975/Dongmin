@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <link rel="stylesheet" href="./ex2.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1 class="logo">ABC 학교</h1>
+            <p class="desc">웹 개발 과정</p>
+            <!-- desc : description 줄임말 -->
+        </div>
+        <div id="nav">
+            <ul>
+                <li>학교 소개
+                    <ul>
+                        <li class="menu">학교비전</li>
+                        <li class="menu">교육이념</li>
+                    </ul>
+                </li>
+                <li>과정 소개
+                    <ul>
+                        <li class="menu">HTML</li>
+                        <li class="menu">CSS</li>
+                        <li class="menu">Javascript</li>
+                    </ul>
+                </li>
+                <li>게시판
+                    <ul>
+                        <li class="menu">공지사항</li>
+                        <li class="menu">문의하기</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="content"> 
+            <h2 class="title">공지사항</h2>
+            <div class="notice">
+                <h3 class="notice-title">3월 개강안내</h3>
+                <p class="notice-text">수강신청은 <span class="under">선착순</span>입니다.</p>
+            </div>
+            <div class="notice highlight">
+                <h3 class="notice-title">평가일정</h3>
+                <p class="notice-text">포토샵 / 일러스트 평가가 포함됩니다.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p class="copyright">&copy; ABC school</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/*전체 선택자*/
+/*
+    스타일 초기화
+    모든 웹페이지 문서
+    외부 스타일 시트(reset.css)로 만들어서 사용
+    */
+* {
+   font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 태그 선택자 */
+
+h1 {
+    color: aquamarine;
+}
+
+h2 {
+    color: brown;
+}
+
+p {
+    font-size: 30px;
+}

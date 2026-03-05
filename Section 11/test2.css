@@ -1,0 +1,59 @@
+/* 전체 선택자 */
+* {
+    font-size: 16px;
+}
+
+/* 태그 선택자 */
+h2 {
+    font-size: 35px;
+    color: aquamarine;
+}
+h3{
+    font-size: 25px;
+    color: orange;
+}
+/*
+   - ul 앞에 글머리 기호 스타일 제거 방법
+    -스타일 초기화할때 사용함. 
+*/
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 아이디 선택자 */
+/*
+    #아이디명 {속성: 값;  속성: 값;} 
+   - 해당 웹문서에서 유일한 이름 (거의 필수인 권장사항)
+   - 같은 아이디가 있어도 적용은 되지만 , 권장하지는 않는다.
+*/
+
+#make {
+    background-color: #3c94cf3b;
+}
+#nav {
+    /* border: 선두께 선종류 선색깔 순서 */
+    border: 3px solid red;
+}
+
+/* 클래스 선택자 */
+/*
+    .클래스명 {속성 : 값; 속성 : 값; }
+    여러 태그에 중복해서 사용 가능
+*/
+
+.card {
+    border: 2px solid pink;
+}
+
+.card-txt {
+    color: blue;
+}
+/* 선택자 우선순위
+    태그 선택자 > 아이디 선택자 > 클래스 선택자
+*/
