@@ -1,0 +1,28 @@
+*{
+    font-size: 20px;
+}
+
+h1 {
+    color: brown;
+}
+
+ul {
+    list-style: none;
+}
+
+#last {
+    background-color: aquamarine;
+    text-decoration: underline;
+}
+
+.title {
+   color: aqua;
+}
+
+.menu {
+    border: 2px solid red;
+}
+
+#header {
+    background-color: bisque;
+}
