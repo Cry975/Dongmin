@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 자식 선택자 */
+/*
+선택한 요소의 !바로 아래 있는 요소! 만 선택하는것.
+A > B : A 요소의 바로 아래있는 B요소 선택
+*/
+
+nav > ul {
+    background-color: lightgray;
+    border: 1px solid red;
+}
+
+nav > ul > li > a {
+    font-size: 20px; color: red;
+}
+
+.card-txt > h3 {
+    font-size: 22px;
+    color: orange;
+}
+
+/* 후손 선택자 */
+/*
+    선택한 요소의 모든 하위 요소 선택
+*/
+
+/*nav li {
+    border: 1px solid black;
+} */
+
+.sub li {
+    border: 1px solid black;
+}
+
+#make h2 {
+    font-size: 40px;
+    color: chocolate;
+}

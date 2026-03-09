@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    border: 10px solid black;
+}
+
+h2 {
+    color: blue;
+}
+
+.box {
+    background-color: lightgray;
+}
+
+.menu > ul {
+    background-color: lightyellow;
+}
+
+.box > span {
+    color: orange;
+}
+
+.menu > ul > li > a {
+    font-size: 20px;
+}
+
+.content p {
+    color: green;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.notice h2~p {
+    font-size: 18px;
+}
+.box h2+p {
+    color: red;
+}
+
+h1, footer p {
+    font-size: 20px;
+}

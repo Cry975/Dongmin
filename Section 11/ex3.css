@@ -1,0 +1,27 @@
+.wrap p {
+color: blue;
+}
+
+.wrap>p {
+    background-color: yellow;
+}
+
+h1+p {
+    font-size: 24px;
+}
+
+h2~p {
+    text-decoration: underline;
+}
+
+h1,h2 {
+    color: purple;
+}
+
+.subject li {
+    color: brown;
+}
+
+.sub > li {
+    background-color: lightgray;
+}

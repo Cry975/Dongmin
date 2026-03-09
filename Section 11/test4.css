@@ -1,0 +1,32 @@
+/* 형제 선택자 */
+/*
+  특정 요소 뒤에 형제 요소를 모두 선택
+*/
+.text~p {
+    color: blue;
+}
+
+.fruit~li {
+    color: red;
+}
+
+/* 인접 형제 선택자 */
+/*
+    특정 요소 바로 뒤에 오는 형제 요소 하나만 선택
+*/
+
+.text+p {
+    background-color: yellow;
+}
+
+.fruit+li {
+    font-size: 20px;
+}
+
+/* 그룹 선택자 */
+/*
+    여러 개의 요소를 선택
+*/
+h2, h3 {
+color: green;
+}
