@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 상위 요소에 의해 상속된 요소의 스타일 */
+        div {
+            color: red;
+        }
+        /* 태그 선택자로 지정한 스타일 속성*/
+        p {
+            color: green !important;
+        }
+        /*class 선택자로 지정한 스타일 속성*/
+        .text {
+            color: blue;
+        }
+        /* id 선택자로 지정한 스타일 속성*/
+        #txt {
+            color: violet;
+        }
+        /* 속성값 뒤에 !important 붙인 속성
+          !important : 강제로 우선순위 부여(유용하긴 하나 남발 X)
+        */
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>제목</h1>
+        <p id="txt" class="text">내용</p>
+    </div>
+</body>
+</html>

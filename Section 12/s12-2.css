@@ -1,0 +1,128 @@
+/* ----- 가상 클래스 선택자 ----- */
+/*
+    2-1 :hover
+    :마우스를 올렸을 때
+*/
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+.naver:hover {
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+/*
+    2-2 :active
+    :마우스로 클릭하는 순간
+*/
+
+.google:active{
+    color: green;
+}
+button:active {
+    background-color: black;
+    color: yellow;
+}
+
+/*
+    2-3 :link -> 방문하지 않은 링크 
+        :visited - > 한번이라도 방문 했던 링크
+*/
+.site:link {
+    color: black;
+}
+.site:visited {
+    color: cornflowerblue   ;
+}
+
+/*
+    2-4 :checked
+    :체크가 되어있는 체크박스, 라디오 버튼 선택
+*/
+input:checked+label {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+/* 
+    2-5 : foucs
+    :입력창이 선택되었을 때 
+*/
+input:focus {
+    background-color: lightgray;
+}
+
+/*
+    2-6 : enabled -> 사용 가능한 입력 요소 
+        :disabled -> 비활성한된 요소
+*/
+input:disabled {
+    background-color: lightpink;
+}
+input:enabled {
+    background-color: lightcyan;
+}
+
+/*
+    2-7 :read only
+    :읽기 전용 입력 요소 
+    readonly 속성을 가지고 있는 input 태그 
+*/
+.input:read-only {
+    background-color: lightyellow;
+}
+
+/*
+    2-8 :required
+    : 필수 입력 요소
+    required 속성을 가지고 있는 input 태그
+*/
+input:required {
+    border: 4px solid red;
+}    
+
+/* 
+    2-9 :first-child
+    : 자신의 부모 요소의 첫 번째 요소를 선택
+*/
+
+.front li:first-child {
+    color: red;
+}
+
+/*
+    2-10 :last-child
+    : 자신의 부모 요소의 마지막 요소를 선택
+*/
+
+.back li:last-child {
+    color: red;
+}
+
+/* 
+    2-11 :nth-child()
+    : 특정한 순서의 요소를 선택 
+    짝수만 : even 2n
+    홀수만 : odd 2n-1, 2n+1
+    배수도 선택할수 있음 : 2n,3n,4n
+*/
+.color li:nth-child(3) {
+    font-size: 25px;
+}
+
+.color li:nth-child(even) {
+    color: red;
+}
+
+.color li:nth-child(2n) {
+    background-color: yellow;
+}
+
+.color li:nth-child(odd) {
+    color: blue;
+}
+.color li:nth-child(2n-1) {
+    background-color: lightskyblue;
+}

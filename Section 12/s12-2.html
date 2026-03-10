@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자</title>
+    <link rel="stylesheet" href="./s12-2.css">
+</head>
+<body>
+    <h1>2. 가상 클래스 선택자</h1>
+    <pre>- 요소의 특정 상태를 선택할 때 사용하는 선택자</pre>
+        <!-- 중요 ! -->
+        <h2>2-1 :hover</h2>
+            <a href="#" class="naver">네이버</a>
+            <button>클릭</button>
+
+        <h2>2-2 :active</h2>
+            <a href="#" class="youtube">유튜브</a>
+            <a href="#" class="google">구글</a>
+            <button>클릭</button>
+
+        <h2>2-3 :link & :visited</h2>
+            <a href="https://www.naver.com" class="site">네이버</a>
+            <a href="https://google.com" class="site">구글</a>
+
+        <h2>2-4 :checked</h2>
+            <input type="radio" name="agree" id="agree" checked><label for="agree">동의합니다</label>
+            <input type="radio" name="agree" id="disagree"><label for="disagree">동의하지 않습니다</label>
+            <br>
+            <input type="checkbox" name="subject" id="html"><label for="html">HTML</label>
+            <input type="checkbox" name="subject" id="css" checked><label for="css">CSS</label>
+            <input type="checkbox" name="subject" id="js"><label for="js">Javascript</label>
+
+        <h2>2-5 :focus</h2>
+            <input type="text">
+            <input type="text">
+
+        <h2>2-6 :enabled & :disabled</h2>
+            <input type="text">
+            <input type="text" disabled value="입력 불가능">
+
+        <h2>2-7 :read-only</h2>
+            <input type="text" class="input">
+            <input type="text" class="input" readonly value="read-only">
+
+        <h2>2-8 :required</h2>
+            <input type="text">
+            <input type="text" required>
+        <!-- 2-9 , 2-10 , 2-11 중요! -->
+        <h2>2-9 :first-child</h2>
+            <ul class="front">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+
+        <h2>2-10 :last-child</h2>
+            <ul class="back">
+                <li>Java</li>
+                <li>Python</li>
+                <li>PHP</li>
+            </ul>
+
+        <h2>2-11 :nth-child()</h2>
+            <ul class="color">
+                <li>빨강</li>
+                <li>노랑</li>
+                <li>파랑</li>
+                <li>초록</li>
+                <li>보라</li>
+            </ul>
+        
+        <h2>2-12 :first-of-type</h2>
+            <div class="cafe">
+                <h3>메뉴</h2>
+                <p>아메리카노</p>
+                <p>카페라떼</p>
+                <p>레몬에이드</p>
+            </div>
+            
+        <h2>2-13 :last-of-type</h2>
+            <div class="notice">
+                <h3>공지사항</h3>
+                <p>공지사항1</p>
+                <p>공지사항2</p>
+                <p>공지사항3</p>
+            </div>
+
+        <h2>2-14 :nth-of-type()</h2>
+            <div class="contents">
+                <p>내용1</p>
+                <span>내용2</span>
+                <p>내용3</p>
+                <a href="#">내용4</a>
+                <p>내용5</p>
+                <h4>내용6</h4>
+                <p>내용7</p>
+            </div>
+
+        <h2>2-15 :only-child</h2>
+            <div class="animal">
+                <p>강아지</p>
+            </div>
+            <div class="animal">
+                <p>고양이</p>
+                <p>다람쥐</p>
+            </div>
+            <div class="animal">
+                <p>앵무새</p>
+            </div>
+
+        <h2>2-16 :not()</h2>
+            <ul class="nav">
+                <li>HOME</li>
+                <li class="about">ABOUT</li>
+                <li>SERVICE</li>
+                <li>GALLERY</li>
+                <li>CONTACT</li>
+            </ul>
+
+        <h2>2-17 :empty</h2>
+            <div class="box">box</div>
+            <div class="box"></div>
+            <div class="box">box</div>
+</body>
+</html>
