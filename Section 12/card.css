@@ -1,0 +1,36 @@
+.card-wrap {
+    width: 900px;
+    background-color: #f5f5f5;
+}
+.card {
+    width: 250px;
+    background-color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card h3 {
+    font-size: 24px;
+}
+.card p {
+    font-size: 16px;
+    color: #444;
+}
+.card::before{
+    content: "BEST!";
+    background-color: tomato;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.card p::before {
+    content: "* ";
+}
+
+.card p::after {
+    content: "  지금 학습하기";
+    color: blue;
+    font-size: 14px;
+}

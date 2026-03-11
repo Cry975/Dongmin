@@ -126,3 +126,73 @@ input:required {
 .color li:nth-child(2n-1) {
     background-color: lightskyblue;
 }
+
+/*
+    2-12 : first-of-type
+    : 같은 태그 중 첫 번째 요소를 선택
+*/
+
+.cafe p:first-of-type {
+    color: red;
+}
+
+/*
+    2-13 : last-of-type
+    : 같은 태그 중 마지막 요소를 선택
+*/
+
+.notice p:last-of-type {
+    color: red;
+}
+
+/*
+    2-14 : nth-of-type()
+    : 같은 태그 중에서 특정한 순서의 요소를 선택할때 사용
+    짝수만 : even 2n
+    홀수만 : odd 2n-1, 2n+1
+    배수도 선택할수 있음 : 2n,3n,4n
+*/
+
+.contents p:nth-last-of-type(2) {
+    font-size: 30px;
+}
+
+.contents p:nth-last-of-type(even) {
+    color: red;
+}
+
+.contents p:nth-last-of-type(2n) {
+    background-color: yellow;
+}
+
+.contents p:nth-last-of-type(odd) {
+    color: blue
+}
+
+.contents p:nth-last-of-type(2n+1) {
+    background-color: lightgray;
+}
+
+/*
+
+    2-15 : only child 
+    : 부모 요소 안에 해당 자식 요소가 하나뿐일 때 선택하는것임.
+*/
+
+.animal p:only-child {
+    color: red;
+}
+
+/*
+    2-16 : not()
+    : 괄호 안의 조건에 해당되지 않는 특정 요소를 선택
+      조건에는 요소,순서,아이디,클래스 등등 들어갈수 있다 
+*/    
+
+.nav li:not(.about) {
+    color: blue;
+}
+
+.nav li:not(:last-of-type) {
+    border: 1px solid rebeccapurple;
+}

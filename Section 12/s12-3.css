@@ -1,0 +1,85 @@
+/* ===== 가상 요소 선택자 ===== */
+/*
+    3-1 ::before
+    :요소의 첫번째 요소 가상 요소를 추가 
+     요소의 내용 앞에 콘텐츠 추가
+*/
+.before h2::before {
+    content: "중요";
+    color: red;
+}
+
+.before p::before {
+    content: '* ';
+}
+
+/*
+    3-2 ::after
+    :요소의 마지막 요소를 가상 요소를 추가 
+    요소의 내용 뒤에 콘텐츠 추가 
+*/
+
+.after p::after {
+    content: 'New!';
+    color: orange;
+    font-size: 20px;
+}
+
+.after a {
+    color: gray;
+    text-decoration: none;
+}
+.after a::after {
+    display: inline-block;
+    content: " ";
+    width: 1px;
+    height: 12px;
+    background-color: gray;
+    margin-left: 5px
+}
+
+.after a:last-child::after {
+    display: none;
+}
+.after a:hover {
+    text-decoration: underline;
+}
+
+/*
+    3-3 ::first-letter
+    :첫 글자의 스타일 
+*/
+.first-letter p::first-letter {
+    font-size: 20px;
+    color: red;
+}
+/*
+    3-4 ::first-line
+    : 첫 줄 스타일
+*/
+.first-line p::first-line {
+    color: red;
+}
+/*
+    3-5 ::selection
+    : 드래그 했을 때 스타일 
+*/
+.selection p::selection {
+    background-color: yellow;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+/*
+    3-6 ::marker
+    : 리스트 요소의 마커 스타일
+*/
+
+.marker li::marker {
+    content: "# ";
+    color: red;
+    font-size: 30px;
+}

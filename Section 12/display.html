@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 속성</title>
+    <style>
+        section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .box {
+            background: #87CEFA;
+            border: 2px solid #333;
+        }
+    </style>
+    <link rel="stylesheet" href="./display.css">
+</head>
+
+<body>
+    <h1>CSS display</h1>
+    <h2>
+        HTML 요소가 화면에서 어떤 방식으로 배치되고 표현될지를 결정하는 CSS 속성
+    </h2>
+
+    <table border="1">
+        <tr>
+            <td>block 요소</td>
+            <td>한 줄 전체 차지</td>
+            <td>div, p, h1</td>
+        </tr>
+        <tr>
+            <td>inline 요소</td>
+            <td>내용만큼만 차지</td>
+            <td>span, a, strong</td>
+        </tr>
+    </table>
+    <p>
+        요소의 inline, block 같은 줄을 차지하는 방식,
+         다른 요소와의 배치관계, 내부 요소의 정렬 방식 등을
+         결정하는 핵심 속성
+    </p>
+
+    <!-- block -->
+    <section>
+        <h2>1. display: block</h2>
+        <pre>
+            - 한 줄 전체를 차지하며, 항상 줄바꿈 발생
+            - 가로폭 100% 차지
+            - width와 height 설정 가능
+            - 여백 적용 가능
+        </pre>
+        <div class="block">
+            <div class="box">BOX1</div>
+            <div class="box">BOX2</div>
+            <div class="box">BOX3</div>
+        </div>
+    </section>
+
+    <!-- inline -->
+    <section>
+        <h2>2. display: inline</h2>
+        <pre>
+            - 요소 내용만큼의 크기만 차지하며
+            - 줄바꿈 없이 옆으로 배치
+            - width와 height 설정 불가능
+            - 좌우 여백만 적용 가능
+        </pre>
+        <div class="inline">
+            <span class="box">TEXT1</span>
+            <span class="box">TEXT2</span>
+            <span class="box">TEXT3</span>
+        </div>
+    </section>
+
+    <!-- inline-block -->
+    <section>
+        <h2>3. display: inline-block</h2>
+        <pre>
+            - block과 inline 특징을 동시에 가짐
+            - 줄바꿈없이 옆으로 배치되면서 width와 height 설정 가능
+            - 여백 적용 가능
+        </pre>
+        <div class="inline-block">
+            <div>BOX1</div>
+            <div>BOX2</div>
+            <div>BOX3</div>
+        </div>
+    </section>
+
+    <!-- none -->
+    <section>
+        <h2>4. display: none</h2>
+        <pre>
+            - 요소를 화면에서 완전히 제거
+            - 공간도 차지하지 않음
+            - DOM에는 존재
+        </pre>
+        <div class="none">
+            <div>보이는 박스</div>
+            <div class="hide">숨겨진 박스</div>
+            <div>보이는 박스</div>
+        </div>
+    </section>
+
+</body>
+
+</html>
