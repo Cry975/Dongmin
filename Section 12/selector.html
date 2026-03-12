@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 선택자 종합 문제</title>
+    <link rel="stylesheet" href="./selector.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>CSS 선택자 연습</h1>
+        <p class="intro">다양한 선택자를 활용하여 스타일을 적용해보세요.</p>
+
+        <div class="box notice">
+            <h2>공지사항</h2>
+            <ul>
+                <li><a href="#">공지 1</a></li>
+                <li><a href="#">공지 2</a></li>
+                <li><a href="#">공지 3</a></li>
+            </ul>
+        </div>
+
+        <div class="box gallery">
+            <h2>갤러리</h2>
+            <p>이미지 목록입니다.</p>
+            <ul>
+                <li><img src="https://picsum.photos/200/200" alt="이미지1"></li>
+                <li><img src="https://picsum.photos/200/200" alt="이미지2"></li>
+                <li><img src="https://picsum.photos/200/200" alt="이미지3"></li>
+            </ul>
+        </div>
+
+        <div class="box form-area">
+            <h2>회원가입</h2>
+            <form>
+                <p>
+                    <label for="userName">이름</label>
+                    <input type="text" id="userName" placeholder="이름 입력">
+                </p>
+                <p>
+                    <label for="userEmail">이메일</label>
+                    <input type="email" id="userEmail" placeholder="이메일 입력">
+                </p>
+                <p>
+                    <input type="checkbox" checked><label> 약관 동의</label>
+                </p>
+                <p>
+                    <button type="submit">가입하기</button>
+                </p>
+            </form>
+        </div>
+        
+        <div class="box info">
+            <h2>추가 정보</h2>
+            <p>첫 번째 문단입니다.</p>
+            <p>두 번째 문단입니다.</p>
+            <span>참고 텍스트</span>
+            <p>세 번째 문단입니다.</p>
+        </div>
+    </div>
+</body>
+</html>

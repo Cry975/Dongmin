@@ -1,0 +1,89 @@
+/* 아이디 선택자 */
+#wrap {
+    width: 1000px;
+}
+ /* 태그 선택자 */
+ ul {
+    list-style: none;
+ }
+
+ /* 클래스 선택자 */ 
+ .box {
+    border: 1px solid #ccc;
+    /* #ccc = #cccccc */
+    margin-bottom: 20px;
+    padding: 10px;
+ }
+ 
+ /* 그룹 선택자 */
+h1,h2 {
+    color: darkblue;
+}
+
+/* 후손 선택자 */
+.notice a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 자식 선택자 */
+.gallery > ul > li {
+    display: inline-block;
+}
+
+/* 인접 형제 선택자 */
+h1 + p {
+    color: orange;
+}
+
+/* 형제 선택자 */
+.info span ~ p {
+    color: green;
+}
+
+/* 속성 선택자 */
+input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: aliceblue;
+}
+input[type="email"]{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: antiquewhite;
+}
+
+/* 가상 클래스 선택자 */
+.notice a:hover {
+    color: red;
+}
+
+.form-area input[type="checkbox"]:checked {
+    accent-color: red; /* accent-color : 체크 박스 색을 바꾸는 css */
+}
+
+.form-area input[type="checkbox"]:checked + label {
+    color: red;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* 가상 요소 선택자 */
+h2::before {
+    content: "→ ";
+}
+
+.intro::after {
+    content: " ← 중요 안내 ";
+    color: red;
+}

@@ -1,0 +1,111 @@
+/* 1.글자 색 */
+/*
+    CSS 상속 
+    :부모 요소의 CSS 스타일이 자식 요소에게 전달 되는것 
+    가능 속성: 글자색, 글자 크기, 행간, 글꼴, 정렬, 글자두께
+    불가능 속성: 테두리, 여백, 배경색 
+*/
+.color {
+    border: 3px solid black;
+    color: #aaa;
+}
+
+.color h3 {
+    color: red;
+}
+
+.color p:first-of-type {
+    color: blue;
+}
+
+.color p:nth-of-type(2) {
+    color: green;
+}
+
+.color .text span {
+    color: #d64c86b7
+}
+
+/* 2. 글자 크기 */
+/*
+    [절대 키워드]
+    xx-small < x-small < medium < large < x-large
+    - 기본 글자 크기는 medium 정도 (16px)
+    - 브라우저마다 다르기 때문에  정확한 px보다는
+      small은 medium보다 작다 정도로만 인식
+
+    [상대 키워드]
+    larger : 부모 글자 크기보다 한 단계 크게
+    smaller : 부모 글자보다 한 단계 작게  
+*/
+
+.font-size .basic {
+    font-size: 16px;
+}
+
+.font-size .small {
+    font-size: 14px;
+}
+
+.font-size .medium {
+    font-size: 20px;
+}
+
+.font-size .large {
+    font-size: 32px;
+}
+
+/* 3. 글자 두께 */
+/*
+    -100-900 지정 가능
+    -기본 두께 : normal, 400
+    -두꺼운 두께 : bold, 700
+    -부모 요소의 상대적인 굵기 : bolder, lighter
+*/
+.font-weight .normal {
+    font-weight: normal;
+}
+.font-weight .light {
+    font-weight: 100;
+}
+.font-weight .bold {
+    font-weight: bold;
+}
+.font-weight .bolder {
+    font-weight: 900;
+}
+
+/* 4. 글자 정렬 */
+/* 가로 정렬 : text-align */
+.text-align p {
+    border: 2px solid black;
+}
+.text-align .left {
+    text-align: left;
+}
+.text-align .center {
+    text-align: center;
+}
+.text-align .right {
+    text-align: right;
+}
+.text-align .inline span {
+    border: 1px solid red;
+}
+.text-align .inline {
+    text-align: right;
+}
+/* 세로 정렬 : vertical-align */
+.text-align .vertical img { 
+    vertical-align: middle;
+}
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
