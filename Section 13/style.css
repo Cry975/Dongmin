@@ -1,0 +1,68 @@
+* {
+    font-family: 'Noto Sans KR', '맑은 고딕' , sans-serif;
+}
+
+.wrap {
+    width: 700px;
+}
+.title {
+    color: navy;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 3px gray;
+}
+.subtitle{
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+     /*
+        auto : 표 안의 콘텐츠 양에 따라 셀 너비가 자동으로 계산이 됨.
+        fixed : 첫번째 행의 셀의 너비에 따라 나머지 행도 고정
+    */
+}
+th,td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+th {
+    background-color: #f2f2f2;
+}
+.board-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 이 세개가 항상 세트로 들어가야 함*/
+}
+
+.box {
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 20px;
+}
+.content {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+    text-indent: 20px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.notice {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-1Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-2ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-3Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A2z';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+* {
+    font-family: "A2z", "맑은 고딕", sans-serif;
+    /*font-family: 기본폰트, 대체 폰트 ,폰트스타일;
+        폰트 로딩 실패를 대비해서 대체 폰트를 작성해야함
+
+        폰트 확장자 
+        - woff : 웹용으로 압축된 폰트 형식
+        - woff2: woff보다 더 효율적으로 압축된 최신폰트 형식
+        - ttf: 일반 폰트 파일 형식, 용량이 클수도 있음.
+    */
+   
+}
+
+/* 1. 텍스트 기울임 */
+.style .text1 {
+    font-style: normal;
+}
+.style .text2 {
+    font-style: italic;
+}
+.style .text3 {
+    font-style: oblique;
+    /*
+        폰트의 이탤릭체를 제공하지 않을때
+        강제로 기울임을 사용
+        italic체 안될때 oblique 사용하면됨.
+    */
+}
+
+/* 2. 영문 대소문자 변환 */
+.transform .up {
+    text-transform: uppercase; /* 모두 대문자 */
+}
+.transform .low {
+    text-transform: lowercase; /* 모두 소문자 */
+}
+.transform .cap {
+    text-transform: capitalize;
+    /* 각 단어의 첫 글자를 대문자로 */
+}
+
+/* 3. 문단 첫 줄 들여쓰기 
+    (블록 요소에만 적용 가능)
+*/
+.indent p {
+    text-indent: 10px;
+    text-indent: -10px; /* 내어쓰기 */
+}
+
+/* 4.단어 간격 */
+.spacing p {
+    word-spacing: 20px;
+}
+
+/* 5. 텍스트 그림자 */
+/*
+    text-shadow: 가로위치 세로위치 흐림정도 색상;
+*/
+.shadow h1 {
+    text-shadow: 2px 2px 2px green;
+    text-shadow: 0px 0px 10px gray;
+    text-shadow: 1px 1px 2px rgba(0 , 0 , 0 , 0.3);
+    /* rgba(red 0~255, green 0~255, blue 0~255, alpha투명도 0~1)*/
+}
+
+/* 6. 단어 줄바꿈 */
+.break {
+    width: 180px;
+    border: 1px solid black;
+}
+.normal {
+    word-break: normal;
+    /* 기본값, 브라우저의 줄바꿈 규칙 따름 */
+}
+.breakall {
+    word-break: break-all;
+    /* 부모 요소 크기에 따라서 강제 줄바꿈 */
+}
+.keepall {
+    word-break: keep-all;
+    /* 줄바꿈 안함 */
+}
+
+/* 7. 문자열 줄바꿈 */
+.wrap {
+    width: 200px;
+    border: 1px solid black;
+}
+.normal {
+    overflow-wrap: normal;
+}
+.breakword {
+    overflow-wrap: break-word;
+}
+/*
+    word-break : 줄 바꿈 규칙
+    overflow-wrap: 글자가 영역에 넘치는 것을 방지ㄴ
+*/
+
+/* 8. 텍스트 안의 줄바꿈 */
+.space {
+    width: 200px;
+    border: 1px solid black;
+}
+.normal {
+    white-space: normal; /* 자동 줄바꿈 처리 */
+}
+.nowrap {
+    white-space: nowrap; /* 줄바꿈 안함 */
+}
+.pre {
+    white-space: pre; /* 공백,엔터 그대로 적용*/
+}
+.prewrap {
+    white-space: pre-wrap; 
+    /* 공백,엔터 그대로 적용하고 + 자동 줄바꿈 */
+}
+.preline {
+    white-space: pre-line; /* 엔터 적용 , 공백 정리 */
+}
+/* 9. 넘치는 텍스트 처리 */
+.overflow p {
+    width: 200px;
+    border: 1px solid black;
+    /*
+        text-overflow 속성은 단독으로 사용하지 않음
+        -> text-overflow + white-space + overflow
+        - clip : 넘치는 부분을 그냥 잘라냄 
+        - ellipsis : 넘치는 부분을 말줄임 표시 
+    */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}

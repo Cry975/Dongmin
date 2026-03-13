@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 스타일</title>
+    <link rel="stylesheet" href="./s13-2.css">
+</head>
+<body>
+    <!-- 1. 텍스트 기울임 -->
+    <h1>1. font-style</h1>
+    <div class="style">
+        <p class="text1">기본 글자</p>
+        <p class="text2">기울어진 글자</p>
+        <p class="text3">기울어진 글자</p>
+    </div>
+    <hr>
+
+    <!-- 2. 영문 대소문자 변환 -->
+    <h1>2. text-transform</h1>
+    <div class="transform">
+        <p class="up">hello world</p>
+        <p class="low">HELLO WORLD</p>
+        <p class="cap">hello world</p>
+    </div>
+    <hr>
+
+    <!-- 3. 문단 첫 줄 들여쓰기 -->
+    <h1>3. text-indent</h1>
+    <div class="indent">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <hr>
+
+    <!-- 4. 단어 간격 -->
+    <h1>4. word-spacing</h1>
+    <div class="spacing">
+        <p>This is a word spacing example</p>
+        <p>단어 간격 조절</p>
+    </div>
+    <hr>
+
+    <!-- 5. 텍스트 그림자 -->
+    <h1>5. text-shadow</h1>
+    <div class="shadow">
+        <h1>텍스트 그림자</h1>
+    </div>
+    <hr>
+
+    <!-- 6. 단어 줄바꿈 -->
+    <h1>6. word-break</h1>
+    <div class="break normal">
+        가나다라마바사abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </div>
+    <div class="break breakall">
+        가나다라마바사abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </div>
+    <div class="break keepall">
+        가나다라마바사abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </div>
+    <hr>
+
+    <!-- 7. 문자열 줄바꿈 -->
+    <h1>7. overflow-wrap</h1>
+    <div class="wrap normal">
+        https://abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz.com
+    </div>
+    <div class="wrap breakword">
+        https://abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz.com
+    </div>
+    <hr>
+
+    <!-- 8. 텍스트 안 줄바꿈 -->
+    <h1>8. white-space</h1>
+    <div class="space normal">안녕하세요       반갑습니다
+줄바꿈 테스트입니다</div>
+    <div class="space nowrap">안녕하세요       반갑습니다
+줄바꿈 테스트입니다</div>
+    <div class="space pre">안녕하세요       반갑습니다
+줄바꿈 테스트입니다</div>
+    <div class="space prewrap">안녕하세요       반갑습니다
+줄바꿈 테스트입니다</div>
+    <div class="space preline">안녕하세요       반갑습니다
+줄바꿈 테스트입니다</div>
+    <hr>
+
+    <!-- 9. 넘치는 텍스트 처리 -->
+    <h1>9. text-overflow</h1>
+    <div class="overflow">
+        <p>이것은 박스 너비를 넘어가는 아주 긴 텍스트입니다. 말줄임표로 표시됩니다.</p>
+    </div>
+</body>
+</html>

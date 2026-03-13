@@ -109,3 +109,52 @@ td {
     text-align: center;
     vertical-align: middle;
 }
+
+/* 5. 글자 장식 */
+.deco .under {
+    text-decoration: underline;
+}
+.deco .over {
+    text-decoration: overline;
+}
+.deco .through {
+    text-decoration: line-through;
+}
+.deco a {
+    text-decoration: none;
+}
+
+/* 6. 행간 조절 */
+.line-height .text1 {
+    line-height: 1.2;
+    /* 현재 글자 크기(16px)의 1.2배 */
+    line-height: 80%; /* 100% 기본값 */
+    line-height: 20px;
+}
+.line-height .text2 {
+    line-height: 2;
+}
+.line-height .text3 {
+    border: 1px solid blue;
+    line-height: 100px;
+    /*
+        수직 정렬할때도 사용한다.
+        영역 height값과 동일하게 지정하면
+        수직 가운데 정렬
+    */
+    height: 100px;
+    text-align: center;
+}
+
+/* 7. 자간 조절 */
+.spacing .normal {
+    /* 기본값 */
+    letter-spacing: normal;
+    letter-spacing: 0px;
+}
+.spacing .wide {
+    letter-spacing: 5px;
+}
+.spacing .narrow {
+    letter-spacing: -1.5px;
+}
