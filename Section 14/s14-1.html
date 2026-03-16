@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+    <link rel="stylesheet" href="./s14_1.css">
+</head>
+<body>
+    <h2>1. content 영역</h2>
+    <div class="box1">박스</div>
+
+    <h2>2. padding 영역</h2>
+    <div class="box2">
+        <div>박스</div>
+        <button>Click!</button>
+    </div>
+
+    <h2>3. border 영역</h2>
+    <div class="box3">
+        <div class="b1">solid</div>
+        <div class="b2">dashed</div>
+        <div class="b3">dotted</div>
+        <div class="b4">double</div>
+    </div>
+    <p class="p1">border-radius1</p>
+    <p class="p2">border-radius2</p>
+    <p class="p3">&gt;</p>
+    <table>
+        <tr>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>날짜</th>
+        </tr>
+        <tr>
+            <td>공지사항1</td>
+            <td>관리자</td>
+            <td>2026.01.01</td>
+        </tr>
+        <tr>
+            <td>공지사항2</td>
+            <td>관리자</td>
+            <td>2026.01.01</td>
+        </tr>
+        <tr>
+            <td>공지사항3</td>
+            <td>관리자</td>
+            <td>2026.01.01</td>
+        </tr>
+        <tr>
+            <td>공지사항4</td>
+            <td>관리자</td>
+            <td>2026.01.01</td>
+        </tr>
+    </table>
+
+    <h2>4. margin 영역</h2>
+    <div class="box4">
+        <div>박스</div>
+        <div>가운데 정렬된 박스</div>
+    </div>
+
+    <h2>5. 요소의 크기</h2>
+    <div class="box5">
+        <div class="b1">박스1</div>
+        <pre>
+            실제 가로 크기 = 300+20+20+5+5=350
+            차지하는 총 가로 공간 =350+10+10=370
+            실제 세로 크기 = 100+20+20+5+5=150
+            차지하는 총 가로 공간 =150+10+10=170
+        </pre>
+        <div class="b2">박스2</div>
+        <pre>
+            실제 가로 크기 = 300+5+5+2+2=314
+            차지하는 총 가로 공간 = 314+20+20=354
+            실제 세로 크기 = 100+10+10+2+2=124
+            차지하는 총 가로 공간 =124+10+10=144
+        </pre>
+    </div>
+
+    <h2>6. box-sizing 속성</h2>
+    <div class="box6">
+        <div class="b1">content-box</div>
+        <div class="b2">border-box</div>
+    </div>
+</body>
+</html>

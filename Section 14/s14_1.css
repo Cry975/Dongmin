@@ -1,0 +1,138 @@
+.box1 {
+    background-color: lightblue;
+    width: 300px;
+    height: 150px;
+    border: 5px solid red;
+}
+
+/* 2. padding 영역 */
+.box2 div {
+    background-color: lightblue;
+    width: 300px;
+    height: 150px;
+    padding: 50px;
+    padding: 20px 0 10px 50px;
+    margin-bottom: 20px;
+}
+.box2 button {
+    background-color: white;
+    font-size: 25px;
+    padding: 5px 50px;
+}
+.box2 button:hover {
+    /* 마우스를 올렸을때 */
+    background-color: black;
+    color: white;
+}
+
+.box2 button:active {
+    /* 마우스로 클릭 했을때 */
+    background-color: darkkhaki
+}
+
+/* 3. border 영역 */
+.box3 {
+    background-color: lightcoral;
+    width: 300px;
+    padding: 20px 10px;
+}
+.box3 .b1 {
+    border: 3px solid red;
+}
+.box3 .b2 {
+    border: 3px dashed green;
+}
+.box3 .b3 {
+    border: 3px dotted orange;
+}
+.box3 .b4 {
+    border: 3px double violet;
+}
+.p1 {
+    border: 3px solid black;
+    width: 200px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 20px; /* 정확한 값 */
+    border-radius: 50%; /* 모서리를 완전히 둥글게 */
+}
+
+.p2 {
+    border: 3px solid black;
+    width: 200px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 50px 0 50px 0;
+}
+.p3 {
+    background-color: beige;
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 50%;
+}
+
+table {
+    width: 500px;
+    table-layout: fixed; /* 첫 줄 너비 만큼 */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th,td {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+th {
+    border-top: 3px solid black;
+}
+
+tr:last-child td {
+    border-bottom: 3px solid black;
+}
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+tr:nth-child(even) td {
+    background-color: #bbb;
+}
+
+/* 4. margin 영역 */
+.box4 {
+    width: 600px;
+    border: 1px solid red;
+}
+.box4 div:first-child {
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.box4 div:last-child{
+    background-color: lightgreen;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto; /* 요소 가운데 정렬 */
+}
+
+/* 5. 요소의 크기 */
+.box5 .b1 {
+    background-color: lightblue;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.box5 .b2{
+    background-color: lightgreen;
+    width: 300px;
+    height: 100px;
+    padding: 10px 5px;
+    border: 2px solid black;
+    margin: 10px 20px ;
+}
