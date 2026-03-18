@@ -136,3 +136,19 @@ tr:nth-child(even) td {
     border: 2px solid black;
     margin: 10px 20px ;
 }
+
+/* 6. 박스 사이징 속성 */
+.box6 div {
+    background-color: lightblue;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+.box6 .b1 {
+    box-sizing: content-box;
+    margin-bottom: 10px;
+}
+.box6 .b2 {
+    box-sizing: border-box;
+}

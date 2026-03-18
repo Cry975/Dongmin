@@ -1,0 +1,19 @@
+.a div {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.box1 {
+    float: left;
+}
+.box2 {
+    float: right;
+}
+h2 {
+    clear: both;
+}
+img {
+    float: left;
+    margin-right: 15px;
+}

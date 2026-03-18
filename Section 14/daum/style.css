@@ -1,0 +1,95 @@
+/* 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #191919;
+}
+
+body {
+    font-family: "맑은 고딕", Malgun Gothic, Arial, sans-serif;
+    color: #191919;
+}
+
+/*===== index.html =====*/
+.intro-wrap {
+    width: 400px;
+    margin: 18px auto;/* 요소 가운데 정렬 */
+}
+.intro-box {
+    width: 100%; /* 부모 요소 너비의 100% */
+    background-color: #f3f3f3;
+    border: 1px solid #ddd; /* #dddddd */
+    border-radius: 12px;
+    padding: 22px 24px;
+    text-align: center;
+}
+
+.intro-box.login-btn {
+    display: block; /* 인라인 요소를 블록요소로 전환 */
+    width: 338px;
+    height: 48px;
+    line-height: 48px; /* 세로 값 정렬 위에 값이랑 똑같이 적으면 가운데 정렬 */
+    margin: 0 auto;
+    background-color: #fee500;
+    border-radius: 24px;
+    font-size: 14px;
+}
+.login-btn:hover {
+    background-color: #fbdd0d;
+}
+
+.kakao-icon img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.intro-links {
+    margin-top: 15px;
+    font-size: 14px;
+    
+}
+.intro-links a {
+    color: #777;
+}
+.intro-links a:hover{
+    color: #999;
+}
+.intro-links a::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #cfcfcf;
+    margin: 0 10px 0 15px;
+}
+.intro-links a:last-child::after {
+    display: none;
+}
+
+/*===== login.html =====*/
+.wrap {
+    width: 100%;
+    padding-top: 120px;
+
+    border: 1px solid red;
+}
+/* 로고 영역 */
+.logo {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* 로그인 영역 */
+.login-box {
+    width: 580px;
+    background-color: #fff; /* white */
+    border:  1px solid #e2e2e2;
+    padding: 68px 68px 50px; /* 위 좌우 아래 */
+    margin: 0 auto; /* 요소 가운데 정렬 */
+}
