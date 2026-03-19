@@ -22,7 +22,7 @@ body {
 }
 .intro-box {
     width: 100%; /* 부모 요소 너비의 100% */
-    background-color: #f3f3f3;
+    background-color: white;
     border: 1px solid #ddd; /* #dddddd */
     border-radius: 12px;
     padding: 22px 24px;
@@ -76,8 +76,6 @@ body {
 .wrap {
     width: 100%;
     padding-top: 120px;
-
-    border: 1px solid red;
 }
 /* 로고 영역 */
 .logo {
@@ -92,4 +90,125 @@ body {
     border:  1px solid #e2e2e2;
     padding: 68px 68px 50px; /* 위 좌우 아래 */
     margin: 0 auto; /* 요소 가운데 정렬 */
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #cfcfcf;
+    padding: 0 0 12px; /* 위 좌우 아래 */
+    font-size: 16px;
+    outline: none; /* input태그에 포커스 했을때 테두리 */
+
+}
+.input-group input:focus {
+    /* input 태그에 포커스 했을때 */
+    border-bottom: 2px solid #666;
+}
+.input-group input::placeholder {
+    /* placeholder 속성 스타일 변경 */
+    color: #aaa;
+}
+.save-area {
+    font-size: 15px;
+    color: #555;
+    margin: 28px 0 34px;
+}
+.info-icon {
+    display: inline-block;
+    border: 1px solid #9a9a9a;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.login-box .login-btn {
+    width: 100%;
+    height: 48px;
+    background-color: #fee500;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer; /* 요소에 마우스 올렸을때 커서 변경 */
+
+}
+
+.login-box .login-btn:hover {
+    background-color: #fbdd0d;
+}
+.or-line {
+    text-align: center;
+    color: #a0a0a0;
+    font-size: 13px;
+    margin: 30px 0;
+    border-top: 1px solid #e5e5e5;
+    line-height: 0;
+}
+.or-line span {
+    background-color: white;
+    padding: 0 10px;
+}
+
+.qr-btn {
+    width: 100%;
+    height: 48px;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.qr-btn:hover {
+    background-color: #ececec;
+}
+
+.login-links {
+    font-size: 13px;
+    margin-top: 28px;
+}
+.login-links .left-link {
+    float: left;
+}
+.login-links .right-link {
+    float: right;
+}
+
+.login-links::after {
+    content: "";
+    display: block;
+    clear: both; /* float 속성 해지 */
+}
+.login-links .right-link a::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #e5e5e5;
+    margin: 0 10px 0 5px;
+}
+.login-links .right-link a:first-child::before {
+    display: none;
+}
+
+/* 푸터 영역 */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+.footer .a{
+    color: #666;
+}
+.footer .bar {
+    margin: 0 8px;
+    color: #d0d0d0;
+}
+.copyright {
+    margin-left: 16px;
 }
