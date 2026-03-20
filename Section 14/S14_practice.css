@@ -1,3 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 .top {
     position: fixed;
     right: 10px;

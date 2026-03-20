@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realative, absolute 예시2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .banner {
+            width: 1000px;
+            margin: 50px auto;
+            position: relative; /* 부모 요소 */
+        }
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 60px;
+            margin-top: -60px;
+            color: white;
+        }
+        .banner-text a {
+            display: inline-block;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .banner-text h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .banner-text p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .banner-text a:hover {
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="./city.jpg" alt="배너 이미지">
+        <div class="banner-text">
+            <h2>봄맞이 특별 이벤트</h2>
+            <p>지금 가입하면 다양한 혜택을 받을 수 있습니다.</p>
+            <a href="#">자세히 보기</a>
+        </div>
+    </div>
+</body>
+</html>

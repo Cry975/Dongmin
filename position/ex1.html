@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative, absolute 예시1</title>
+    <style>
+        /* 스타일 초기화 */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            margin: 50px auto; /* 요소 가운데 정렬 */
+            position: relative; /* 부모 요소 지정 */
+        }
+        .card img {
+            width: 100%;
+            display: block;
+        }
+        .card-text {
+            padding: 15px;                                                 
+        }
+        .card-text h3 {
+            margin-bottom: 10px;
+        }
+        .badge {
+            background-color: crimson;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 6px 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">NEW!</span>
+        <img src="./shoes.jpg" alt="상품 이미지">
+        <div class="card-text">
+            <h3>여름 샌들</h3>
+            <p>가볍고 시원한 데일리 슈즈</p>
+        </div>
+    </div>
+</body>
+</html>
