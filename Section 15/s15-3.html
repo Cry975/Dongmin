@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 그라데이션</title>
+    <link rel="stylesheet" href="./s15-3.css">
+</head>
+<body>
+    <h1>CSS 그라데이션</h1>
+    <pre>
+    - 두 가지 이상의 색이 자연스럽게 이어지도록 표현하는 방식
+    - background 또는 background-image 속성에서 사용함
+    <a href="https://uigradients.com/#VirginAmerica" target="_blank">uiGradients</a>
+    <a href="https://gradienthunt.com/#google_vignette" target="_blank">GradientHunt</a>
+    <a href="https://webgradients.com/">WebGradients</a>
+
+
+    </pre>
+
+    <h2>1. linear-gradient()</h2>
+    <pre>
+    - 선형 그라데이션
+    - background: linear-gradient(방향, 색1, 색2, 색3, ...);
+      background-image: linear-gradient(방향, 색1, 색2, 색3, ...);
+    - 방향 생략 가능, 색은 두 가지 이상
+    * 방향 값
+     - to bottom : 위 -> 아래 (기본값)
+     - to top : 아래 -> 위
+     - to right : 왼쪽 -> 오른쪽
+     - to left : 오른쪽 -> 왼쪽
+     - to bottom right : 왼쪽 위 -> 오른쪽 아래
+     - to bottom left : 오른쪽 위 -> 왼쪽 아래
+     - 각도 : 0deg, 45deg, 90deg, 180deg
+    </pre>
+    <section class="linear">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </section>
+
+    <h2>2. redial-gradient()</h2>
+    <pre>
+    - 원형 그라데이션
+    - 중심에서 바깥쪽으로 퍼지는 그라데이션
+    - background: radial-gradient(색1, 색2, 색3, ...);
+      background-image: radial-gradient(색1, 색2, 색3, ...);
+    - 요소의 가로 세로 비율에 따라 원형 또는 타원형 모양처럼 보임
+    </pre>
+    <section class="radial">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </section>
+
+    <h2>3. conic-gradient()</h2>
+    <pre>
+    - 각도 그라데이션
+    - 중심을 기준으로 회전하면서 변하는 그라데이션
+    - background: conic-gradient(색1, 색2, 색3, ...);
+      background-image: conic-gradient(색1, 색2, 색3, ...);
+    </pre>
+    <section class="conic">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </section>
+
+    <div class="hero">
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+
+    <button class="btn1">지금 시작하기</button>
+    <button class="btn2">회원가입</button>
+    <button class="btn3">무료 체험 시작</button>
+</body>
+</html>

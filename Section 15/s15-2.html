@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 배경 이미지</title>
+    <link rel="stylesheet" href="./s15-2.css">
+</head>
+<body>
+    <h1>background-image</h1>
+    <pre>
+    - 요소에 배경 이미지를 넣는 속성
+    - background-image: url("이미지 경로");
+    - 이미지는 기본적으로 반복
+    - 배경 이미지는 요소 뒤쪽에 깔리는 이미지(요소를 가리지 않음)
+    - img 태그처럼 의미를 가지는 이미지가 아니라, 장식용 이미지
+    </pre>
+    <div class="box1"></div>
+    <div class="box"></div>
+
+    <h1>background-size</h1>
+    <pre>
+    - 배경 이미지의 크기를 조절하는 속성
+    - background-size: auto; -> 원본 크기 유지
+      background-size: 값; -> 가로만 지정되고, 세로는 자동 비율 유지
+      background-size: 가로 세로;
+      background-size: contain; -> 배경 이미지가 전부 보이도록 크기 조절, 비율은 유지하지만 빈 공간이 생길 수 있음
+      background-size: cover; -> 배경 영역을 꽉 채우도록 이미지 크기 조절, 비율은 유지하지만 이미지가 잘릴 수도 있음
+    </pre>
+    <div class="box2"></div>
+
+    <h1>background-repeat</h1>
+    <pre>
+    - 배경 이미지의 반복 여부 지정
+    - background-repeat: repeat; -> 가로, 세로 모두 반복(기본값)
+      background-repeat: repeat-x; -> 가로 방향으로만 반복
+      background-repeat: repeat-y; -> 세로 방향으로만 반복
+      background-repeat: no-repeat; -> 반복하지 않음
+    </pre>
+    <div class="box3"></div>
+
+    <h1>background-position</h1>
+    <pre>
+    - 배경 이미지의 위치 지정
+    - background-position: 가로 세로;
+    - 값은 위치속성(center, right, bottom, top, left), px, % 사용 가능
+    </pre>
+    <div class="box4"></div>
+
+    <h1>background-attachment</h1>
+    <pre>
+    - 배경 이미지가 스크롤과 함께 움직일지, 고정될지를 정하는 속성
+    - background-attachment: scroll; -> 스크롤하면 배경도 같이 움직이는 것처럼 보임(기본값)
+      background-attachment: fixed; -> 배경 이미지를 화면에 고정, 스크롤해도 배경이 움직이지 않음
+                                       모바일에서는 원하는대로 동작안하는 경우도 있음
+                                       배경 이미지의 기준 박스가 요소가 아니라 뷰포트 쪽으로 바뀌는 것처럼 동작
+    </pre>
+    <p class="section">영역</p>
+    <div class="box5"></div>
+    <p class="section">영역</p>
+    <div class="box6"></div>
+    <p class="section">영역</p>
+
+    <h1>background</h1>
+    <pre>
+    - 배경 관련 속성을 한 줄로 줄여쓰는 축약형 속성
+    - background: color image repeat attchment position / size;
+    - 모든 값을 반드시 다 사용하는 것은 아님
+    </pre>
+    <div class="banner">
+        <div class="banner-txt">
+            <h2>신규 회원 특별 혜택</h2>
+            <p>가입만 해도 다양한 쿠폰을 받아보실 수 있습니다.</p>
+            <a href="#">more</a>
+        </div>
+    </div>
+</body>
+</html>

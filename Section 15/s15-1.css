@@ -1,0 +1,87 @@
+span {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 50px;
+}
+/* 1.색상명 */
+.box1 .color1 {
+    background-color: red;
+}
+
+.box1 .color2 {
+    background-color: yellow;
+}
+
+.box1 .color3 {
+    background-color: blue;
+}
+
+/* 2. RGB */
+.box2 .color1 {
+    background-color: rgb(0, 0, 0);
+}
+.box2 .color2 {
+    background-color: rgb(255, 255, 255);
+}
+.box2 .color3 {
+    background-color: rgb(255, 0, 0);
+}
+.box2 .color4 {
+    background-color: rgb(0, 255, 0);
+}
+.box2 .color5 {
+    background-color: rgb(0, 0, 255);
+}
+.box2 .color6 {
+    background-color: rgb(255, 255, 0);
+}
+
+/* 3. HEX */
+.box3 .color1 {
+    background-color: #000000;
+    /* #000000 = #000 */
+}
+.box3 .color2 {
+    background-color: #ffffff; /* fff */
+}
+.box3 .color3 {
+    background-color: #ff0000; /* f00 */
+}
+.box3 .color4 {
+    background-color: #00ff00; /* 0f0 */
+}
+.box3 .color5 {
+    background-color: #0000ff; /* 00f */
+}
+.box3 .color6 {
+    background-color: #ffff00; /* ff0 */
+}
+
+/* 4.HSL */
+.box4 .color1 {
+    background-color: hsl(0, 100%, 100%);
+}
+.box4 .color2 {
+    background-color: hsl(0, 100%, 0);
+}
+.box4 .color3 {
+    background-color: hsl(0, 100%, 50%);
+}
+.box4 .color4 {
+    background-color: hsl(120, 100%, 50%);
+}
+.box4 .color5 {
+    background-color: hsl(240, 100%, 50%);
+}
+
+/* 5.RGBA */
+.box5 .color1 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.box5 .color2 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.box5 .color3 {
+    background-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

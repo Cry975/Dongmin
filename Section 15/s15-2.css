@@ -1,0 +1,87 @@
+div {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.box1 {
+    background-image: url("./apple.jpg");
+}
+.box {
+    background-image: url("./banana.jpg");
+}
+.box2 {
+    background-image: url("./apple.jpg");
+    background-size: 200px;
+    background-size: 500px 200px;
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box3 {
+    background-image: url("./banana.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.box4 {
+    background-image: url("./apple.jpg");
+    background-repeat: no-repeat;
+    background-position: 20px 50px;
+    background-position: 50% 50%; /* 요소 정중앙 배치 */
+    background-position: bottom right;
+    background-position: center; /* 요소 정중아 배치 */
+}
+
+.section {
+    height: 500px;
+    line-height: 500px;
+}
+.box5 {
+    background-image: url("./banana.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.box6 {
+    background-image: url("./banana.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-attachment: fixed;
+}
+
+.banner {
+    width: 1000px;
+    height: 300px;
+    border: none;
+    background: url("./banner.jpg") no-repeat center / cover;
+    position: relative;
+}
+
+.banner-txt {
+    border: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.banner-txt h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+.banner-txt p {
+    font-size: 18px;
+}
+.banner-txt a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 50px;
+}
+.banner-txt a:hover {
+    background-color: white;
+    color: black;
+}
