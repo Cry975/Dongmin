@@ -1,0 +1,158 @@
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.box {
+    width:220px;
+    height: 120px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    line-height: 120px;
+    background-color: #f1f1f1;
+    margin-bottom: 15px;
+}
+
+/* 1. transition */
+/* (1) transition-property / transition-duration */
+.sec1 .box1 {
+    transition-property: width;
+    transition-duration: 1s;
+}
+.sec1 .box1:hover{
+    width: 400px;
+}
+.sec1 .box2 {
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.sec1 .box2:hover{
+    background-color: yellow;
+}
+
+/* 2.transition-delay*/
+.sec2 .box1 {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+.sec2 .box1:hover{
+    width: 400px;
+    background-color: lightblue;
+}
+.sec2 .box2 {
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+.sec2 .box2 {
+    width: 400px;
+    background-color: lightpink;
+}
+
+/* (3) transition-timing-funtion */
+.sec3 .box1 {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.sec3 .box1:hover, .sec3 .box2:hover, .sec3 .box3:hover , .sec3 .box4:hover,.sec3 .box5:hover{
+    width: 400px;
+}
+.sec3 .box2 {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.sec3 .box3 {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.sec3 .box4 {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+.sec3 .box5 {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+/* (4) transition 축약형 */
+.sec4 .box1 {
+    transition: background-color 0.5s ease;
+}
+.sec4 .box1:hover {
+    background-color: gold;
+}
+.sec4 .box2 {
+    transition: transform 0.3s ease-in-out;
+}
+.sec4 .box2:hover {
+    transform: scale(1.1);
+    background-color: skyblue;
+}
+.sec4 .box3 {
+    transition: opacity 0.5s ease 1s;
+}
+.sec4 .box3:hover{
+    opacity: 0.4;
+}
+
+/* 2. transform */
+/* (1) rotate() */ 
+.sec5 .box1 {
+    transform: rotate(20deg);
+    margin-bottom: 50px;
+}
+.sec5 .box2 {
+    transform: rotate3d(0,1,1,-10deg);
+}
+
+/* (2) translate() */
+.sec6 .box1,.sec6 .box2,.sec6 .box3{
+    transition: all 1s ease-in-out;
+}
+.sec6 .box1:hover {
+    transform: translate(50px,20px);
+}
+
+.sec6 .box2:hover {
+    transform: translateX(100px);
+}
+.sec6 .box3:hover {
+    transform: translateY(-10px);
+}
+
+/* (3) scale() */
+.sec7 .box1:hover {
+    transform: scale(1.2);
+} 
+.sec7 .box2:hover {
+    transform: scale(0.5);
+}
+
+/* (4) skew() */
+.sec8 .box:hover {
+    transform: skew(20deg,10deg);
+}
+
+/* 예시 */
+.card {
+    width: 300px;
+    height: 180px;
+    border: 1px solid #ccc;
+    background-color: white;
+    text-align: center;
+    line-height: 180px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}

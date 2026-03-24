@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 전환과 변형</title>
+    <link rel="stylesheet" href="./s16.css">
+</head>
+<body>
+    <h1>CSS 전환(transition)과 변형(transform)</h1>
+
+    <pre>
+- transition : CSS 속성 값이 변경될 때 그 변화를 부드럽게 보여주는 기능
+- transform : 요소를 이동, 확대/축소, 회전, 기울이기 하는 기능
+    </pre>
+
+    <h1>1. transition</h1>
+    <pre>
+- 속성 값이 바뀔 때 일정 시간 동안 부드럽게 변화
+- 기본 문법
+  transition: 속성 지속시간 타이밍함수 지연시간;
+
+- 주요 속성
+  transition-property : 어떤 속성에 전환을 적용할지 지정
+    ┗ all(모든 속성), width, height, background-color, color, opacity, transform 등
+  transition-duration : 전환 시간 / 1s (1초) = 1000ms (1밀리초)
+  transition-delay : 지연 시간
+  transition-timing-function : 변화 속도 방식
+    ┗ 자주 쓰는 값
+       ease : 기본값, 처음과 끝은 느리고 중간은 빠름
+       linear : 처음부터 끝까지 같은 속도
+       ease-in : 처음은 느리고 나중에 빨라짐
+       ease-out : 처음은 빠르고 끝에서 느려짐
+       ease-in-out : 처음과 끝은 느리고 중간은 빠름
+    </pre>
+    <h2>(1) transition-property / transition-duration</h2>
+    <section class="sec1">
+        <div class="box box1">가로 크기 변화</div>
+        <div class="box box2">배경색 변화</div>
+    </section>
+
+    <h2>(2) transition-delay</h2>
+    <section class="sec2">
+        <div class="box box1">1초 후</div>
+        <div class="box box2">2초 후</div>
+    </section>
+
+    <h2>(3) transition-timing-function </h2>
+    <section class="sec3">
+        <div class="box box1">ease</div>
+        <div class="box box2">linear</div>
+        <div class="box box3">ease-in-out</div>
+        <div class="box box4">ease-in</div>
+        <div class="box box5">ease-out</div>
+    </section>
+
+    <h2>(4) transition 축약형</h2>
+    <section class="sec4">
+        <div class="box box1">배경색 변화</div>
+        <div class="box box2">크기 확대</div>
+        <div class="box box3">투명도 변화</div>
+    </section>
+
+    <h1>2. transform</h1>
+    <pre>
+- 요소의 모양이나 위치를 바꾸는 속성
+- 요소를 이동하거나 회전해도 문서의 원래 배치 흐름은 크게 바뀌지 않음
+- 주요 함수
+    rotate() : 회전
+    translate() : 이동
+    scale() : 확대/축소
+    skew() : 기울이기
+
+- 여러 개를 함께 사용 가능
+  transform: translateX(20px) scale(1.1) rotate(5deg);
+
+- 주의
+  transform은 따로 여러 번 쓰면 마지막 값만 적용됨
+    </pre>
+
+    <h2>(1) rotate()</h2>
+    <pre>
+    - 요소를 회전 시키는 속성
+    - transform: rotate(각도);
+      transform: rotate3d(x축, y축, z축, 각도);
+    </pre>
+    <section class="sec5">
+        <div class="box box1">2d 회전</div>
+        <div class="box box2">3d 회전</div>
+    </section>
+
+    <h2>(2) translate()</h2>
+    <pre>
+    - 요소를 이동시키는 속성
+    - transform: translate(x축, y축);
+    - transform: translateX(값); -> X축으로 이동
+    - transform: translateY(값); -> Y축으로 이동
+    </pre>
+    <section class="sec6">
+        <div class="box box1">x,y축 이동</div>
+        <div class="box box2">x축 이동</div>
+        <div class="box box3">y축 이동</div>
+    </section>
+
+    <h2>(3) scale()</h2>
+    <pre>
+    - 요소를 확대 및 축소시키는 속성
+    - transform: scale(값);
+    - transform: scale(X축, Y축);
+    - 값 :  1 = 원래크기
+            1보다 큰 값 = 확대
+            1보다 작은 값 = 축소
+    </pre>
+    <section class="sec7">
+        <div class="box box1">확대</div>
+        <div class="box box2">축소</div>
+    </section>
+
+    <h2>(4) skew()</h2>
+    <pre>
+    - 요소를 기울이는 속성
+    - transform: skew(x축 각도, y축 각도);
+    </pre>
+    <section class="sec8">
+        <div class="box">Skew</div>
+    </section>
+
+    <h2>3. 예시</h2>
+    <pre>
+- hover 시 요소가 자연스럽게 이동하거나 확대되도록 만들 수 있음
+- 버튼, 카드, 이미지, 메뉴 등에서 많이 사용함
+    </pre>
+
+        <div class="card">카드 hover 효과</div>
+
+        <button class="btn1">버튼 hover</button>
+
+        <div class="photo-box">
+            <img src="https://picsum.photos/400/250" alt="예시 이미지">
+        </div>
+
+        <div class="img-box">
+            <img src="https://picsum.photos/250/250" alt="예시 이미지">
+            <div class="hover-box"><span>자세히보기</span></div>
+        </div>
+
+        <div class="icon">⟳</div>
+        
+        <div class="more">
+            <a href="#">더보기 <span>→</span></a>
+        </div>
+</body>
+</html>

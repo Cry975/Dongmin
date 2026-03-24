@@ -9,3 +9,73 @@ div {
 .linear .box1 {
     background: linear-gradient(red,blue);
 }
+.linear .box2 {
+    background: linear-gradient(to right, pink, skyblue);
+}
+.linear .box3 {
+    background: linear-gradient(45deg, orange,purple);
+}
+.linear .box4 {
+    background: linear-gradient(to bottom right , red,orange,yellow);
+}
+.linear .box5 {
+    background: linear-gradient(red 20%, yellow 50%, blue 80%);
+}
+
+/* 2. radial-gradient */
+
+.radial .box1 {
+    background: radial-gradient(circle, red,yellow);
+}
+.radial .box2 {
+    background: radial-gradient(white, skyblue, navy);
+    height: 400px;
+}
+
+/* 3.conic-gradient */
+.conic .box1 {
+    background: conic-gradient(purple,tomato);
+}
+.conic .box2 {
+    background: conic-gradient(red,yellow,green,blue,purple);
+}
+
+.hero {
+    width: 1000px;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+}
+.hero p {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 350px;
+}
+
+button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btn1 {
+    background: linear-gradient(to right,#667eea,#764ba2);
+}   
+.btn2 {
+    background: linear-gradient(to right,#ff9966,#ff5e62);
+    border-radius: 100px;
+    box-shadow: 0px 6px 15px rgba(255, 94, 98, 0.3);
+}
+.btn3 {
+    background: linear-gradient(to right, #00c6ff,#0072ff);
+    box-shadow: 0px 8px 20px rgba(0, 114, 255, 0.25);
+}
+button:hover {
+    opacity: 0.9;
+}
