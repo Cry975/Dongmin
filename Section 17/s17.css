@@ -1,0 +1,191 @@
+.box {
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 30px 0 50px 0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+    background-color: aliceblue;
+}
+
+.box1 {
+    background-color: tomato;
+    animation-name: colorchange;
+    animation-duration: 2s;
+}
+
+@keyframes colorchange {
+    from {/* 시작 지점 */
+        background-color: tomato;
+    }
+    to {/* 끝 지점*/
+        background-color: aquamarine;
+    }
+}
+
+.box2 {
+    background-color: gold;
+    animation-name: keymove;
+    animation-duration: 2s;
+}
+
+@keyframes keymove {
+    0%{
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(120px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} 
+
+/* 2.animation-duration */
+@keyframes upDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-25px);
+    }
+}
+.box3 {
+    animation-name: upDown;
+    animation-duration: 1s;
+}
+.box4 {
+    animation-name: upDown;
+    animation-duration: 2s;
+}
+
+/* 3.animation-iteration-count */
+
+/* 5.animation-delay */
+@keyframes fadeup {
+    from {
+        opacity: 0.3;
+        transform: translateX(0);
+        background-color: #cfe8ff;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(80px);
+        background-color: #9ad17b;
+    }
+}
+.box9 {
+    animation-name: fadeup;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box10 {
+    animation-name: fadeup;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+/* 6. animation-fill-mode */
+@keyframes filltest {
+    from {
+        opacity: 0.3;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+.box11 {
+    opacity: 0.3;
+    animation-name: filltest;
+    animation-duration: 2s;
+}
+.box12 {
+    opacity: 0.3;
+    animation-name: filltest;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* 7. animation-play-state */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.08);
+    }
+}
+
+.box13 {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box13:hover {
+    animation-play-state: paused;
+}
+
+/* 8. animation-timing-function */
+@keyframes runline {
+    from {left: 0;}
+    to {left: 800px;}
+}
+.timing-wrap {
+    width: 1000px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.timing-box {
+    width: 140px;
+    height: 60px;
+    background-color: gold;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 60px;
+    position: relative; /* 위치 속성 사용하기 위해 지정*/
+    animation-name:runline;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.linear {
+    animation-timing-function: linear;
+}
+.ease {
+    animation-timing-function: ease;
+}
+.ease-in {
+    animation-timing-function: ease-in;
+}
+.ease-out {
+    animation-timing-function: ease-out;
+}
+.ease-in-out {
+    animation-timing-function: ease-in-out;
+}
+
+/* 9. animation(축약형) */
+.banner {
+    width: 1000px;
+    height: 320px;
+    background: linear-gradient(135deg, #4f7cff,#7cc6ff);
+    position: relative; /* 부모 요소로 지정 */
+}
+.banner-txt {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

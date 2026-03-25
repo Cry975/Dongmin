@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 애니메이션</title>
+    <link rel="stylesheet" href="./s17.css">
+</head>
+<body>
+    <h1>CSS 애니메이션</h1>
+    <pre>
+    - 요소에 시간의 흐름에 따라 스타일 변화를 주는 속성
+    - transition은 상태 변화가 있어야 실행되지만, animation은 자동 실행 가능
+    - @keyframes로 애니메이션의 동작 과정을 정의
+    - animation 관련 속성으로 재생 시간, 반복 횟수, 속도 등을 설정
+    </pre>
+    <pre style="background-color: aliceblue;padding: 10px;font-size: 16px;">
+        <h4>기본 문법</h4>
+        @keyframes 애니메이션이름 {
+            from {
+                스타일;
+            }
+            to {
+                스타일;
+            }
+        }
+
+        요소 {
+            animation-name: 애니메이션이름;
+            animation-duration: 2s;
+        }
+    </pre>
+    <div class="box box1"></div>
+
+    <h2>1. @keyframes</h2>
+    <pre>
+    - 애니메이션의 시작, 중간, 끝 상태를 정의하는 규칙
+    - from ~ to 로 작성 가능
+    - 또는 0%, 50%, 100%처럼 퍼센트로 세부 단계 작성 가능
+    - 복잡한 움직임을 만들 때는 % 단위 방식이 더 유리함
+    </pre>
+    <div class="box box2"></div>
+
+    <h1>2. animation-duration</h1>
+    <pre>
+    - 애니메이션이 진행되는 시간을 설정
+    - animation-duration: 2s;
+    - s는 초, ms는 밀리초 (1s = 1000ms)
+    - 기본값은 0s
+    - duration 값이 없으면 애니메이션이 보이지 않음
+    </pre>
+    <div class="sample">
+        <div class="box box3">1s</div>
+        <div class="box box4">2s</div>
+    </div>
+
+    <h1>3. animation-iteration-count</h1>
+    <pre>
+    - 애니메이션 반복 횟수 설정
+    - animation-iteration-count: 1; -> 한 번 실행
+      animation-iteration-count: 3; -> 3번 반복
+      animation-iteration-count: infinite; -> 무한 반복
+    </pre>
+    <div class="sample">
+        <div class="box box5">3회</div>
+        <div class="box box6">무한</div>
+    </div>
+
+    <h1>4. animation-direction</h1>
+    <pre>
+    - 애니메이션 진행 방향 설정
+    - normal : 정방향 (from -> to / 0% -> 100%)
+      reverse : 역방향 (to -> from / 100% -> 0%)
+      alternate : 정방향/역방향 번갈아 실행
+      alternate-reverse : 역방향/정방향 번갈아 실행
+    </pre>
+    <div class="sample">
+        <div class="box box7">normal</div>
+        <div class="box box8">alternate</div>
+    </div>
+
+    <h1>5. animation-delay</h1>
+    <pre>
+    - 애니메이션이 바로 시작하지 않고 대기 후 실행되도록 설정
+    - animation-delay: 1s;
+    - 페이지 로드 후 순차 등장 효과에 자주 사용
+    </pre>
+    <div class="sample">
+        <div class="box box9">바로 시작</div>
+        <div class="box box10">1초 후 시작</div>
+    </div>
+
+    <h1>6. animation-fill-mode</h1>
+    <pre>
+    - 애니메이션 시작 전과 종료 후 상태 유지 방식을 설정
+    - none : 기본값, 애니메이션 전 후의 상태 유지 안함
+      forwards : 애니메이션이 끝난 후 마지막 상태 유지
+      backwards : 지연시간(delay) 동안 시작 상태 적용
+      both : forwards + backwards 둘 다 적용
+    </pre>
+    <div class="sample">
+        <div class="box box11">none</div>
+        <div class="box box12">forwards</div>
+    </div>
+
+    <h1>7. animation-play-state</h1>
+    <pre>
+    - 애니메이션 재생/일시정지 설정
+    - running : 실행
+      paused : 정지
+    - hover 시 멈추는 배너, 슬라이드 등에 활용 가능
+    </pre>
+    <div class="box box13">마우스를 올리면 멈춤</div>
+
+    <h1>8. animation-timing-function</h1>
+    <pre>
+    - 애니메이션 속도 변화 방식 설정
+    - linear : 일정한 속도
+      ease : 기본값, 처음과 끝이 느림
+      ease-in : 천천히 시작
+      ease-out : 천천히 끝남
+      ease-in-out : 천천히 시작하고 중간에는 빨라진 후 천천히 끝남
+    </pre>
+    <div class="timing-wrap">
+        <div class="timing-box linear">linear</div>
+        <div class="timing-box ease">ease</div>
+        <div class="timing-box ease-in">ease-in</div>
+        <div class="timing-box ease-out">ease-out</div>
+        <div class="timing-box ease-in-out">ease-in-out</div>
+    </div>
+
+    <h1>9. animation</h1>
+    <pre>
+    - animation 관련 속성을 한 줄로 줄여쓰는 축약형 속성
+    - animation: 이름 지속시간 타이밍함수 지연시간 반복횟수 방향 fill-mode;
+    - (예) animation: float 2s ease-in-out 0s infinite alternate;
+    </pre>
+    <div class="banner">
+        <div class="banner-txt">
+            <h2>CSS Animation Practice</h2>
+            <p>등장, 이동, 반복 효과를 활용해 요소에 생동감을 줄 수 있습니다.</p>
+            <a href="#">more</a>
+        </div>
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+    </div>
+
+    <div class="loading"></div>
+
+    <div class="list">
+        <div class="item">첫 번째 카드</div>
+        <div class="item">두 번째 카드</div>
+        <div class="item">세 번째 카드</div>
+    </div>
+</body>
+</html>
