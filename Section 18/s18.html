@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뷰포트와 미디어쿼리 실습</title>
+    <link rel="stylesheet" href="s18.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+            <p class="label">CSS Responsive Practice</p>
+            <h1>뷰포트(Viewport)와 미디어쿼리(Media Query) 실습</h1>
+            <p class="desc"> <!-- description -->
+                이 예제는 뷰포트 개념, 뷰포트 단위(vw, vh, vmin), 
+                화면 크기에 따라 달라지는 미디어쿼리 반응형 레이아웃을 연습할 수 있도록 만든 실습 파일입니다.
+            </p>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <div class="menu-inner">
+            <a href="#viewport">뷰포트</a>
+            <a href="#units">뷰포트 단위</a>
+            <a href="#cards">반응형 카드</a>
+            <a href="#layout">레이아웃 변화</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="viewport" class="section">
+            <h2>1. 뷰포트(viewport)와 메타 태그</h2>
+            <p>
+                <mark>뷰포트</mark>란, 사용자가 현재 보고 있는 웹 브라우저 화면의 보이는 영역 <br>
+                화면에 보여지는 창의 크기 <br>
+                웹사이트는 PC 뿐 아니라 다양한 화면에서 보여지기 때문에 중요! <br>
+                PC > 태블릿 > 모바일
+            </p>
+            <div class="code-box">
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            </div>
+            <p>
+                <mark>메타 태그</mark><br>
+                (1) width=device-width : 기기의 실제 화면 너비를 기준으로 페이지 너비 맞추라는 뜻<br>
+                (2) initial-scale=1.0 : 페이지가 처음 로드될 때 확대/축소 비율을 1배로 설정하라는 뜻<br>
+                (3) 필요성 : 예전 웹사이트는 PC 기준으로 제작되기 때문에 기본적으로 페이지를 넓게 해석한 후 축소하려 합니다.<br>
+                    모바일에서 글자가 너무 작아보이거나, 화면이 축소되어 보이거나, 반응형 CSS가 의도대로 동작하지 않을 수 있습니다.
+            </p>
+        </section>
+
+        <section id="units" class="section">
+            <h2>2. 뷰포트 단위</h2>
+            <p>
+                <mark>vw</mark><br>
+                뷰포트 너비의 1% <br>
+                100vw = 화면 너비의 100% <br>
+                50vw = 화면 너비의 반
+            </p>
+            <p>
+                <mark>vh</mark><br>
+                뷰포트 높이의 1% <br>
+                100vh = 화면 높이의 100% <br>
+                50vh = 화면 높이의 반
+            </p>
+            <p>
+                <mark>vmin</mark><br>
+                뷰포트 너비와 높이 중 더 작은 값의 1%
+            </p>
+            <p>
+                <mark>vmax</mark><br>
+                뷰포트 너비와 높이 중 더 큰 값의 1%
+            </p>
+            <div class="unit-demo">
+                <div class="unit-box vw-box">width: 50vw</div>
+                <div class="unit-box vh-box">height: 30vh</div>
+                <div class="unit-box vmin-box">20vmin × 20vmin</div>
+                <div class="unit-box vmax-box">4vmax</div>
+            </div>
+        </section>
+
+        <section id="cards" class="section">
+            <h2>3. 미디어쿼리 (Media Query)</h2>
+            <p>
+            - 기기의 화면 크기나 조건에 따라 다른 CSS를 적용하는 기능 <br>
+            - 같은 웹페이지라도 기기에 따라 적절한 디자인 필요합니다. <br>
+            (예) 메뉴가 PC : 가로로 길게 배치, 모바일 : 메뉴가 세로로 쌓임 <br>
+                이미지 4개가 PC : 이미지 한 줄, 모바일 : 이미지 1개씩 세로로 배치 <br>
+                글자 PC : 크게, 모바일 : 작게 <br><br>
+
+            @media (조건) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;선택자 { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;속성: 값; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+            }
+            </p>
+
+            <div class="card-wrap">
+                <div class="card">
+                    <h3>카드 1</h3>
+                    <p>기본적으로는 가로 3열 배치.</p>
+                </div>
+                <div class="card">
+                    <h3>카드 2</h3>
+                    <p>화면이 줄어들면 너비가 자동 변경</p>
+                </div>
+                <div class="card">
+                    <h3>카드 3</h3>
+                    <p>모바일에서는 1열 구조로 변경</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="layout" class="section">
+            <h2>4. 레이아웃 변화 예제</h2>
+            <p>
+                아래 영역은 넓은 화면에서는 좌우 2단, 작은 화면에서는 위아래 1단으로 바뀝니다.
+            </p>
+
+            <div class="layout-box">
+                <div class="left-box">
+                    <h3>왼쪽 영역</h3>
+                    <p>PC에서는 왼쪽 박스가 왼편에 배치됩니다.</p>
+                </div>
+                <div class="right-box">
+                    <h3>오른쪽 영역</h3>
+                    <p>모바일에서는 아래로 내려와 세로 배치됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section btn">
+            <h2>5. 버튼 크기 변화 예제</h2>
+            <p>화면이 좁아지면 아래 버튼이 더 넓게 바뀝니다.</p>
+            <button>예약하기</button>
+        </section>
+
+        <section class="section full-height">
+            <h2>6. 100vh 예제</h2>
+            <p>이 영역은 화면 높이를 기준으로 최소 높이를 잡은 예시입니다.</p>
+        </section>
+    </main>
+</body>
+</html>

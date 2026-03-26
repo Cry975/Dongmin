@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f8fc;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 상단 */
+.hero {
+    min-height: 35vh;
+    background: linear-gradient(135deg, #cfe8ff, #f4d9ff);
+    padding: 40px 20px;
+}
+.hero-inner {
+    width: 90%;
+    max-width: 1100px;
+}
+.label {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.hero h1 {
+    font-size: 3vw;
+    margin-bottom: 16px;
+    
+}
+/* 네비게이션 메뉴 */
+
+
+/* 컨테이너 영역 */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+.section {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+.section h2 {
+    margin-bottom: 14px;
+}
+.section p {
+    margin-bottom: 10px;
+}
+
+
+/* 1. 뷰포트와 메타 태그 */
+.code-box {
+    background-color: #f1f3f7;
+    border: 1px solid #d8dce5;
+    padding: 18px;
+    margin: 16px 0;
+    border-radius: 10px;
+    font-family: Consolas, monospace;
+}
+
+
+/* 2. 뷰포트 단위 */
+.unit-demo {
+    margin-top: 20px;
+}
+
+.unit-box {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.vw-box {
+    background-color: #cfefff;
+    border: 1px solid #8bc6e8;
+    width: 50vw;
+}
+
+.vh-box {
+    background-color: #ffe3bf;
+    border: 1px solid #f0b35d; 
+    height: 30vh; 
+}
+
+.vmin-box {
+    background-color: #e3d8ff;
+    border: 1px solid #a88ee8;
+    min-width: 120px;
+    min-height: 120px;
+
+}
+
+.vmax-box {
+    background-color: #dcffd8;
+    border: 1px solid #8ee89f;
+    font-size: 4vmax;
+}
+
+/* 3. 미디어쿼리 */
+.card {
+    display: inline-block;
+    background-color: #8bc6e8;
+    border-radius: 12px;
+    padding: 20px;
+    width: 31%;
+    margin-right: 1%;
+}
+
+/* 4. 레이아웃 변화 예제 */
+.layout-box {
+    margin-top: 20px;
+}
+.left-box,.right-box {
+    display: inline-block;
+    width: 48.5%;
+    padding: 24px;
+    border-radius: 12px;
+    vertical-align: top;
+    min-height: 220px;
+}
+.left-box {
+    margin-right: 2%;
+    background-color: #f0b35d;
+}
+.right-box {
+    background-color: #8ee89f;
+}
+
+/* 5. 버튼 크기 변화 예제 */
+.btn button {
+    border: none;
+    border-radius: 10px;
+    background-color: #4a7cff;
+    color: white;
+    cursor: pointer;
+    padding: 14px 28px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* 6. 100vh 예제 */
+.full-height {
+    height: 100vh;
+}
+
+/* 미디어쿼리 추가 */
+/* 태블릿 */
+@media screen and (max-width : 1023px) {
+    .card {
+        width: 48.9%;
+        margin-bottom: 16px;
+    }
+    .card:nth-child(2) {
+        margin-right: 0;
+    }
+    .card:nth-child(3) {
+        width: 100%;
+        margin-right: 0;
+    }
+    .btn button {
+        width: 100%;
+    }
+}
+/* 모바일 */
+/* 뷰포트 가로비너가 300~767px까지는 모바일 css적용 */
+@media screen and (min-width: 300px) and (max-width : 767px) {
+    .card {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .left-box,.right-box {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

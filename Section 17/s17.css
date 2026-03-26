@@ -180,6 +180,7 @@
     height: 320px;
     background: linear-gradient(135deg, #4f7cff,#7cc6ff);
     position: relative; /* 부모 요소로 지정 */
+    animation: upshow 1.5s ease forwards;
 }
 .banner-txt {
     color: white;
@@ -188,4 +189,139 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.banner-txt h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+.banner-txt p {
+    font-size: 16px;
+}
+.banner-txt a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px;
+    animation: pop 1.5s ease-in-out forwards alternate;
+}
+.banner-txt a:hover {
+    background-color: white;
+    color: #3562d6;
+}
+
+.ball {
+    border-radius: 50%;
+    opacity: 0.7;
+    position: absolute;
+}
+
+
+.ball1 {
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.35);
+    right: 210px;
+    top: 50px;
+    animation: floatball 2.4s ease-in-out infinite alternate;
+}
+
+.ball2 {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.4);
+    right: 120px;
+    top: 170px;
+    animation: floatball 3s ease-in-out infinite alternate;
+}
+
+.ball3 {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.4);
+    right: 330px;
+    top: 210px;
+    animation: floatball 1.8s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes upshow {
+    from {
+        transform: translate(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatball {
+    from {
+         transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5)
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.loading {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #ddd;
+    border-radius: 50%;
+    border-top: 10px solid #333;
+    margin: 50px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.item {
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: showitem 0.8s ease forwards;
+}
+
+.item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+@keyframes showitem {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
