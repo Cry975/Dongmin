@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            width: 500px;
+            border: 5px solid black; 
+            background-color: #eee;
+            padding: 1px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item {
+            font-weight: bold; text-align: center; padding: 10px;
+            border: 3px solid tomato; 
+            margin: 1px;
+            background-color: #fff;
+            width: 120px;
+        }
+        .item:nth-child(even) {
+            border: 3px solid dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <span>Flex box Layout</span>
+</body>
+</html>
+
+

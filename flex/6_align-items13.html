@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: safe center;
+            gap: 10px;
+            resize: vertical;
+            overflow-x: auto;
+            overflow-y: scroll;
+            border: 5px solid black;
+        }
+        .item {
+            font-weight: bold; text-align: center;
+            margin: 1px;
+            padding: 10px 30px;
+            border: 3px solid tomato;
+        }
+        .item:nth-child(1) { height: 380px; }
+        .item:nth-child(2) { height: 150px; }
+        .item:nth-child(3) { height: 260px; }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>
+            11<br>12<br>13<br>14<br>15<br>16<br>17<br>18
+        </div>
+        <div class="item">
+            1<br>2<br>3<br>4<br>5<br>6<br>7
+        </div>
+        <div class="item">
+            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>
+            11<br>12<br>
+        </div>
+    </div>
+</body>
+</html>
+
+
