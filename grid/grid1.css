@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+section {
+    margin-bottom: 20px;
+}
+section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2d3a8c;
+}
+section h3 {
+    font-size: 18px;
+    margin: 18px 0 10px;
+    color: #37479c;
+}
+section p {
+    margin-bottom: 12px;
+}
+section ul {
+    padding-left: 20px;
+}
+section li {
+    margin-bottom: 8px;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #e5e8f1;
+    margin: 18px 0;
+}
+.code-box {
+    background-color: #f1f3f8;
+    border: 1px solid #d7dbe7;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    overflow-x: auto;
+}
+.code-box pre {
+    font-family: Consolas, monospace;
+    font-size: 15px;
+    white-space: pre-wrap;
+}
+.box,
+.small-box {
+    background-color: #dde5ff;
+    border: 1px solid #91a4f5;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.box {
+    padding: 30px 0;
+}
+
+/* 그리드 기본 구조 및 열과 행 만들기 */
+.grid1 {
+    display: grid;
+    grid-template-columns: 200px 200px 300px 100px;
+    grid-template-rows: 100px 100px;
+    
+}
+
+/* fr 단위 */
+.grid2, .grid3 {
+    display: grid;
+}
+.grid2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 가로 열의 너비 1:1:1 */
+}
+.grid3 {
+    grid-template-columns: 1fr 2fr 3fr;
+}
+/* repeat() */
+.grid4 {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   /* 3개의 열로 1:1:1 */
+   grid-template-columns: repeat(2, 200px);
+   /* 2개의 열로 200px 너비 고정 */
+}
+
+/* auto-fill / auto-fit */
+.fill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+}
+.fit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px, auto));
+}
+/* gap */
+
+
+/* justify-items / align-items / place-items */
+.small-box {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+}
+.frame-grid {
+    background-color: #eef2ff;
+    border: 3px solid #bac6f6;
+    padding: 12px;
+}
+
+
+/* justify-content / align-content / place-content */
+.outer-frame {
+    background-color: #eef2ff;
+    border: 2px dashed #bac6f6;
+    padding: 12px;
+}
+
+
+/* 기본 예제 - 3열 Grid */

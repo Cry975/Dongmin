@@ -1,0 +1,57 @@
+/* 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/* container */
+.container {
+    height: 100vh;
+    display: flex;
+}
+/* aside */
+aside {
+    border: 5px solid dodgerblue;
+    flex-basis: 300px;
+    text-align: center;
+    padding: 20px;
+}
+/* main */
+main {
+    border: 5px solid tomato;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+main .title {
+    border: 5px solid yellowgreen;
+    padding: 20px;
+    text-align: center;
+}
+main .contents {
+    border: 5px solid pink;
+    flex-grow: 1;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main .contents .content {
+    border: 5px solid crimson;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+}
+main .contents .content:last-child {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+main .contents .content div {
+    border:  5px solid violet;
+    width: 49%;
+    height: 100%;
+}
