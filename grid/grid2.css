@@ -48,25 +48,59 @@ hr {
 }
 
 /* grid-column-start, grid-column-end, grid-row-start, grid-row-end */
-
-
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100px);
+    gap: 10px;
+}
+.start-end-box {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
 /* grid-column, grid-row */
 .grid2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100px;
+    grid-auto-rows: 100px; /* 자동으로 열 높이 조정*/
     gap: 10px;
 }
 .shortcut {
+   /*
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    위 내용의 축약형 
+    */
     grid-column: 1 / 3;
     grid-row: 1 / 3;
 }
 
 /* span */
-
-
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
 /* grid-template-areas / grid-area */
-
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 200px 80px;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 10px;
+}
 .header,
 .sidebar,
 .main,
@@ -79,15 +113,19 @@ hr {
 }
 .header {
     background-color: #42a5f5;
+    grid-area: header; /* 이름 지정 */
 }
 .sidebar {
     background-color: #7e57c2;
+    grid-area: sidebar;
 }
 .main {
     background-color: #26a69a;
+    grid-area: main;
 }
 .footer {
     background-color: #8d6e63;
+    grid-area: footer;
 }
 
 /* justify-self / align-self */
@@ -95,6 +133,10 @@ hr {
     background-color: #eef2ff;
     border: 2px dashed #bac6f6;
     padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,120px);
+    gap: 12px;
 }
 .self-box {
     width: 70px;
@@ -107,5 +149,26 @@ hr {
     font-size: 20px;
     font-weight: bold;
 }
-
+.special {
+    justify-self: center;
+    align-self: end;
+}
 /* minmax(), auto-fit, grid-auto-rows */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-auto-rows: 120px;
+    gap: 20px;
+}
+.card {
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

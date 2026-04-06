@@ -91,8 +91,19 @@ hr {
     grid-template-columns: repeat(auto-fit,minmax(120px, auto));
 }
 /* gap */
-
-
+.grid5,.grid6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+.grid5 {
+    gap: 10px;
+}
+.grid6 {
+    /*row-gap: 10px;
+    column-gap: 30px;
+    아래는 축약형 */
+    gap: 10px 30px;
+}
 /* justify-items / align-items / place-items */
 .small-box {
     width: 70px;
@@ -103,15 +114,40 @@ hr {
     background-color: #eef2ff;
     border: 3px solid #bac6f6;
     padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,120px);
+    gap: 12px;
 }
-
+.grid7 {
+    justify-items: center;
+    align-items: center;
+}
+.grid8 {
+    place-items: end center;
+}
 
 /* justify-content / align-content / place-content */
 .outer-frame {
     background-color: #eef2ff;
     border: 2px dashed #bac6f6;
     padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(3,120px);
+    grid-template-rows: repeat(2,80px);
+    height: 320px;
+    gap: 10px;
 }
-
-
+.grid9 {
+    justify-content: space-between;
+    align-content: space-around;
+}
+.grid10 {
+    place-content: end center;
+}
 /* 기본 예제 - 3열 Grid */
+.grid11 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
