@@ -1,0 +1,92 @@
+@charset "utf-8"; /* 웹기능사 시험때 무조건! */
+
+/* 스타일 초기화 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a { 
+   text-decoration: none; 
+   color: inherit; /* 부모의 글자색을 따른다. */
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+/* 와이어 프레임 크기 */
+.wrap {
+    width: 100%;
+    height: 700px;
+}
+
+/* header 영역 */
+header {
+    width: 100%;
+    height: 100px;
+
+    background-color: aliceblue;
+}
+
+header .inner {
+    width: 1200px;
+    margin: 0 auto;
+
+    border: 1px solid red;
+}
+
+/* slide 영역 */
+.slide {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+
+    background-color: antiquewhite;
+}
+
+/* content 영역 */
+.contents {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex; /* article 가로로 배치 */
+
+    background-color: aliceblue;
+}
+.notice {
+    width: calc(100% / 3);
+}
+.gallery {
+    width: calc(100% / 3);
+}
+.banner {
+    flex: 1; /* 남는 영역을 확장/축소하여 차지 */
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #666;
+}
+
+footer .inner {
+    width: 1200px;
+    margin: 0 auto;
+}

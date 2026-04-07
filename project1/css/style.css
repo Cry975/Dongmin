@@ -1,0 +1,198 @@
+@charset "utf-8"; /* 웹기능사 시험때 무조건! */
+
+/* 스타일 초기화 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a { 
+   text-decoration: none; 
+   color: inherit; /* 부모의 글자색을 따른다. */
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+/* 와이어 프레임 크기 */
+.wrap {
+    width: 100%;
+    height: 700px;
+}
+
+/* header 영역 */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #ffebcd;
+}
+
+header .inner {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; /* 부모요소 지정 */
+}
+header h1 {
+    width: 200px;
+    padding-top: 40px;
+}
+nav {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+nav > ul {
+    display: flex;
+}
+nav > ul > li > a {
+    display: block;
+    width: 200px;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+nav > ul > li:hover > a {
+    background-color: #614224;
+    color: #fff;
+}
+.sub {
+    background-color: #fff;
+    display: none; /* 나중에 js 처리 */
+}
+.sub li a {
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 15px;
+}
+.sub li:hover a {
+    background-color: #ebcdb0;
+}
+
+/* slide 영역 */
+.slide {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slide ul li {
+    height: 300px;
+    position: relative; /* 부모요소 지정 */
+}
+.slide ul .s1 {
+    background: url("../images/slide1.jpg") no-repeat center/cover;
+}
+.slide ul .s2 {
+    background: url("../images/slide2.jpg") no-repeat center/cover;
+}
+.slide ul .s3 {
+    background: url("../images/slide3.jpg") no-repeat center/cover;
+}
+.slide ul li a {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 400px;
+    padding: 30px 0;
+    border-radius: 999px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* content 영역 */
+.contents {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex; /* article 가로로 배치 */
+}
+
+.notice {
+    width: calc(100% / 3);
+    padding: 5px;
+}
+.notice ul {
+    border-top: 3px solid #333;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.notice ul li {
+    border-bottom: 1px solid #ccc;
+    position: relative; /* 부모 요소 지정 */
+}
+.notice  ul li:last-child {
+    border-bottom: none;
+}
+.notice ul li a {
+    display: block;
+    padding: 5px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 280px;
+}
+.notice ul li a span {
+    position: absolute;
+    right: 0;
+}
+.notice ul li:hover a {
+    font-weight: bold;
+}
+.gallery {
+    width: calc(100% / 3);
+    background-color: #faf4eb;
+    padding: 5px;
+}
+.gallery ul {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+.gallery ul li {
+    flex: 1;
+    width: 126px;
+    height: 126px;
+    overflow: hidden;
+}
+.gallery ul li:hover a img {
+    opacity: 0.5;
+}
+
+.banner {
+    flex: 1; /* 남는 영역을 확장/축소하여 차지 */
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #666;
+}
+
+footer .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
