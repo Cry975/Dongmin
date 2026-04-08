@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* 스타일 초기화 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+button {
+    cursor: pointer;
+}
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100%;
+
+    background-color: aliceblue;
+}
+
+/* section1 (silde) */
+.slide {
+    width: 100%;
+    height: 920px;
+
+    background-color: antiquewhite;
+}
+
+/* section2 (banner) */
+.banner {
+    width: 100%;
+    height: 800px;
+
+    background-color: aliceblue;
+}
+
+/* section3 (contents) */
+.contents {
+    max-width: 1480px;
+    margin: 0 auto;
+
+    background-color: antiquewhite;
+}
+/* section4 (make) */
+.make {
+    max-width: 1480px;
+    margin: 0 auto;
+
+    background-color: aliceblue;
+}
+/* section 5 (news) */
+.news {
+    max-width: 1480px;
+    margin: 0 auto;
+
+    background-color: antiquewhite;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    
+    background-color: aliceblue;
+}
