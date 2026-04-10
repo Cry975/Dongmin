@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* 스타일 초기화 */
 * {
     padding: 0;
@@ -501,4 +505,194 @@ footer .footer-bottom .copy {
     font-weight: 500;
     color: #666;
     margin-top: 30px;
+}
+/* 스크롤 탑 */
+.scroll-top {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    transition: all 0.25s ease;
+}
+.scroll-top:hover {
+    transform: translateY(-2px);
+}
+
+/* PC 버전에서는 햄버거 버튼 숨김 */
+.menu-toggle {
+    border: none;
+    background: none;
+    font-size: 32px;
+    color: #fff;
+    z-index: 1000;
+    display: none;
+}
+
+/*===== 반응형 =====*/
+@media screen and (max-width: 1024px) {
+    /* header */
+    .menu-toggle {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        display: none; /* JS에서 처리 */
+    }
+    nav > ul {
+        flex-direction: column;
+    }
+    nav > ul > li {
+        border-bottom: 1px solid #eee;
+    }
+    nav > ul > li > a {
+        color: #333;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        justify-content: flex-start;
+    }
+    /* 마우스 호버시 애니메이션 제거 */
+    nav > ul > li > a::before {
+        display: none;
+    }
+    nav::after {
+        display: none;
+    }
+    .sub li:hover a {
+        color: inherit; /* 부모의 글자색 따름 */
+    }
+
+    .sub {
+        display: block;
+        position: static;
+        width: 100%;
+        background-color: #f8f8f8;
+    }
+    .sub li a {
+        text-align: left;
+        padding: 12px 30px;
+    }
+    /* slide */
+    .slide  ul li a {
+    font-size: 40px;
+    width: 90%;
+    text-align: center;
+    }
+    /* banner */
+    .banner {
+        padding: 18px 20px 80px;
+        height: auto;
+    }
+    .banner h3 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    .banner .stats {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .banner .stats .stat {
+        text-align: left;
+        padding: 20px 0;
+    }
+     .banner .stats .stat .stat-value {
+        font-size: 42px;
+     }
+    /* section 공통 */
+    section > h2 {
+        font-size: 25px;
+        text-align: left;
+        padding: 30px 0;
+    }
+
+    /* section3 (contents) */
+    .contents {
+        padding: 80px 20px;
+    }
+    .contents article, .contents article:nth-child(2n-1) {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contents article .con-img, .contents article .con-txt{
+        width: 100%;
+    } 
+    .contents article .con-txt, .contents article .right-align{
+        text-align: left;
+    }
+    .contents article .con-txt .txt1 {
+        font-size: 16px;
+    }
+    .contents article .con-txt .txt2, .contents article .con-txt .txt3 {
+        font-size: 22px;
+    }
+
+    /* section 4 (make) */
+    .make .cards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        height: auto;
+    }
+    .make .cards .card {
+        min-height: 200px;
+    }
+    .make .cards .card p {
+        display: none;
+    }
+    .mkae .cards .card:hover h3{
+        font-size: 20px;
+    }
+    .make .cards .card:hover::after {
+        opacity: 0.2;
+    }
+
+    /* section 5 (news) */
+    .news {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .news .title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .news .title h2 {
+        font-size: 25px;
+    }
+    .news .title a {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    .news .news-cont table a span {
+        display: none;
+    }
+    .news .news-cont table a {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    /* footer */
+    footer .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    footer .footer-top .link a {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    footer .footer-bottom {
+        padding: 20px;
+    }
 }
